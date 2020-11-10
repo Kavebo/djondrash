@@ -1,0 +1,39 @@
+.wrapper {
+  background: url('../assets/images/background2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 140vh;
+}
+
+.players {
+  display: block;
+  margin: 5% auto;
+  width: 70%;
+  height: 30%;
+}
+
+.playersWrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigationWrapper {
+    margin: unset;
+    padding-top: 0px;
+  }
+
+  .hoverPointer {
+    width: 80px;
+    height: 80px;
+  }
+
+  .players {
+    width: 100%;
+  }
+}

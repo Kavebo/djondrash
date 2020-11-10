@@ -1,0 +1,21 @@
+.navigationWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+  padding-top: 50px;
+}
+
+.homeLanguageWrapper {
+  margin: 20px;
+}
+
+.hoverPointer:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .hoverPointer {
+    width: 80px;
+    height: 80px;
+  }
+}

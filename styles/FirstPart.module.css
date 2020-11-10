@@ -1,0 +1,77 @@
+.wrapper {
+  background: url('../assets/images/background1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 140vh;
+}
+
+.infoWrapper {
+  position: relative;
+  top: 35%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+.columnWrapper {
+  display: block;
+  flex: 1;
+  margin: 0 5%;
+}
+
+.emptySeparator {
+  margin-top: 65px;
+}
+
+.infoText {
+  color: #eadcca;
+  text-align: justify;
+  margin: 22px 0;
+}
+
+.bold {
+  font-family: 'Avenir Next Bold';
+  font-size: 18px;
+}
+
+.logoWrapper {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  text-align: right;
+  padding-right: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .infoWrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0%;
+  }
+
+  .emptySeparator {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .logoWrapper {
+    top: 25%;
+    padding-right: 15%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .infoWrapper p {
+    font-size: 14px;
+  }
+
+  .logoWrapper {
+    top: 0%;
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+}
