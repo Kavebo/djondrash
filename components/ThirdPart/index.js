@@ -1,8 +1,8 @@
 import React from 'react';
 
-import styles from '../../styles/ThirdPart.module.css';
+import { Wrapper } from './styled';
 
 const ThirdPart = () => {
-  return <div className={styles.wrapper}>Ahoj</div>;
+  return <Wrapper>Ahoj</Wrapper>;
 };
 export default ThirdPart;

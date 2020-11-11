@@ -2,34 +2,33 @@ import React from 'react';
 
 import logo from '../../assets/images/Logo.png';
 import { useTranslation } from '../../languages';
-import styles from '../../styles/FirstPart.module.css';
 import Navigation from '../Navigation';
+import { Column, InfoWrapper, LogoWrapper, Row, Separator, Text, TextBold, Wrapper } from './styled';
 
 const FirstPart = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={styles.wrapper}>
+    <Wrapper>
       <Navigation />
-      <div className={styles.infoWrapper}>
-        <div className={styles.columnWrapper}>
-          <p className={styles.infoText}>
-            {t('hey1')}
-            {t('hey2')}
-          </p>
-          <p className={styles.infoText}>{t('about1')}</p>
-          <p className={styles.infoText}>{t('about2')}</p>
-        </div>
-        <div className={styles.columnWrapper}>
-          <p className={styles.emptySeparator} />
-          <p className={styles.infoText}>{t('about3')}</p>
-          <p className={styles.infoText}>{t('about4')}</p>
-        </div>
-      </div>
-      <div className={styles.logoWrapper}>
+      <InfoWrapper>
+        <Column>
+          <Row>
+            <TextBold>{t('hey1')}</TextBold>' '<Text>{t('hey2')}</Text>
+          </Row>
+          <Text>{t('about1')}</Text>
+          <Text>{t('about2')}</Text>
+        </Column>
+        <Column>
+          <Separator />
+          <Text>{t('about3')}</Text>
+          <Text>{t('about4')}</Text>
+        </Column>
+      </InfoWrapper>
+      <LogoWrapper>
         <img src={logo} width={200} />
-      </div>
-    </div>
+      </LogoWrapper>
+    </Wrapper>
   );
 };
 export default FirstPart;
