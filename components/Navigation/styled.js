@@ -1,9 +1,25 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   padding-top: 0px;
+
+  @media only screen and (max-width: 600px) {
+    margin: unset;
+  }
+`;
+
+export const LeftSide = styled.div`
+  margin-left: 10%;
+
+  @media only screen and (max-width: 600px) {
+    margin: unset;
+  }
+`;
+
+export const RightSide = styled.div`
+  margin-right: 10%;
 
   @media only screen and (max-width: 600px) {
     margin: unset;
@@ -41,13 +57,14 @@ export const MenuIcon = styled.img`
 export const NavBarWrapper = styled.div`
   width: 100%;
   background: rgba(0, 0, 0, 0.9);
-  display: none;
+  display: ${({ $showNavbar }) => ($showNavbar ? 'flex' : 'none')};
   flex-direction: column;
   position: fixed;
   top: 0;
   text-align: center;
   margin: 0;
   z-index: 10;
+  animation: ease-i 0.5s;
 
   @keyframes ease-o {
     from {
@@ -66,19 +83,6 @@ export const NavBarWrapper = styled.div`
       margin-top: 0;
     }
   }
-
-  ${({ $showNavbar }) => {
-    if ($showNavbar) {
-      return css`
-        animation: ease-i 0.5s;
-        display: flex;
-      `;
-    }
-
-    return css`
-      animation: ease-o 0.5s;
-    `;
-  }}
 
   ul {
     list-style-type: none;

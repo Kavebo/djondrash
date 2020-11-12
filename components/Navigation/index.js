@@ -6,7 +6,7 @@ import homeIcon from '../../assets/images/HOME_button.svg';
 import menuIcon from '../../assets/images/MENU_button.svg';
 import { useTranslation } from '../../languages';
 import { LanguageContext, locales } from '../../languages/LanguageProvider';
-import { Img, MenuIcon, MenuIconWrapper, NavBarWrapper, Wrapper } from './styled';
+import { Img, LeftSide, MenuIcon, MenuIconWrapper, NavBarWrapper, RightSide, Wrapper } from './styled';
 
 const Navigation = () => {
   const [locale, setLocale] = useContext(LanguageContext);
@@ -40,13 +40,17 @@ const Navigation = () => {
         </MenuIconWrapper>
       </NavBarWrapper>
 
-      <div>
+      <LeftSide>
         <Link href="/">
           <Img src={homeIcon} />
         </Link>
         <Img src={languageIcon} width={140} onClick={handleOnLanguageClick} />
-      </div>
-      {!showNavbar && <Img src={menuIcon} onClick={handleOnMenuClick} />}
+      </LeftSide>
+      {!showNavbar && (
+        <RightSide>
+          <Img src={menuIcon} onClick={handleOnMenuClick} />
+        </RightSide>
+      )}
     </Wrapper>
   );
 };
