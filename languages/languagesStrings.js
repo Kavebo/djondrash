@@ -3,13 +3,13 @@ export const languagesStrings = {
     hey1: 'Ahoj! ',
     hey2: 'Moje jméno je @djondrash.',
     about1:
-      'Jsem rád, že tě zajímá moje práce a dovol mi, abych ti ji blíže představil. Rok 2017 byl pro mě tím nejzásadnejším. Tento rok jsem se poprvé zúčastnil národního finále souteže RedBull 3Style. Vybojoval jsem druhé místo, které mi umožnilo dělat DJing na plný úvazek.',
+      'Jsem rád, že tě zajímá moje práce a dovol mi, abych ti ji blíže představil. Rok 2017 byl pro mě tím nejzásadnějším. Tento rok jsem se poprvé zúčastnil národního finále souteže RedBull 3Style. Vybojoval jsem druhé místo, které mi umožnilo dělat DJing na plný úvazek.',
     about2:
-      'V roce 2018 jsem se souteže zúčastnil znovu. Tentokrát jsem vyšplhal o přícku výš a získal titul národního šampióna RedBull 3Style. Výhra mi umožnila reprezentovat Českou republiku v celosvetovém finále probíhajícím v lednu 2019 na Tchaj-wanu. Tam jsem týden soupeřil s dalšími 24 finalisty z celého sveta a snažil se uchvátit porotu behem patnácti minut svého setu.',
+      'V roce 2018 jsem se soutěže zúčastnil znovu. Tentokrát jsem vyšplhal o příčku výš a získal titul národního šampióna RedBull 3Style. Výhra mi umožnila reprezentovat Českou republiku v celosvětovém finále probíhajícím v lednu 2019 na Tchaj-wanu. Tam jsem týden soupeřil s dalšími 24 finalisty z celého světa a snažil se uchvátit porotu během patnácti minut svého setu.',
     about3:
-      'Kromě nespočtu odehraných akcí jsem tentýž rok absolvoval tour pod názvem - Ben Cristovao’s RedBull Tour, která probehla na dvou zastávkách, v Brne a v Českých Budejovicích a vyvrcholila ve vyprodané O2 aréne.',
+      'Kromě nespočtu odehraných akcí jsem tentýž rok absolvoval tour pod názvem - Ben Cristovao’s RedBull Tour, která proběhla na dvou zastávkách, v Brně a v Českých Budějovicích a vyvrcholila ve vyprodané O2 aréne.',
     about4:
-      'Svojí kreativitu a píli dále vkládám do projektu, který se jmenuje @playof. S tímto projektem jsem byl součástí největších festivalu v České republice, jako jsou Beats For Love, Colors of Ostrava nebo High Jump.',
+      'Svojí kreativitu a píli dále vkládám do projektu, který se jmenuje @playof. S tímto projektem jsem byl součástí největších festivalů v České republice, jako jsou Beats For Love, Colors of Ostrava nebo High Jump.',
   },
   en: {
     hey1: 'Hey! ',

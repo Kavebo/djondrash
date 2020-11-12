@@ -14,6 +14,10 @@ const Navigation = () => {
     setLocale(locales[(locales.indexOf(locale) + 1) % 2]);
   };
 
+  const handleOnMenuClick = () => {
+    console.log('[menu was clicked] ');
+  };
+
   return (
     <Wrapper>
       <div>
@@ -22,7 +26,7 @@ const Navigation = () => {
         </Link>
         <Img src={languageIcon} width={140} onClick={handleOnLanguageClick} />
       </div>
-      <Img src={menuIcon} />
+      <Img src={menuIcon} onClick={handleOnMenuClick} />
     </Wrapper>
   );
 };
