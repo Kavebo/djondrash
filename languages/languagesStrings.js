@@ -10,6 +10,9 @@ export const languagesStrings = {
       'Kromě nespočtu odehraných akcí jsem tentýž rok absolvoval tour pod názvem - Ben Cristovao’s RedBull Tour, která proběhla na dvou zastávkách, v Brně a v Českých Budějovicích a vyvrcholila ve vyprodané O2 aréne.',
     about4:
       'Svojí kreativitu a píli dále vkládám do projektu, který se jmenuje @playof. S tímto projektem jsem byl součástí největších festivalů v České republice, jako jsou Beats For Love, Colors of Ostrava nebo High Jump.',
+    videos: 'Videá',
+    actions: 'Akce',
+    cooperation: 'Spolupráce',
   },
   en: {
     hey1: 'Hey! ',
@@ -22,5 +25,8 @@ export const languagesStrings = {
       'Besides DJ competitions I have been participating in Ben Cristovao ́s RedBull Tour in 2019 which ended in sold-out O2 Arena.',
     about4:
       'Meanwhile, I have been working on a project called @playof. This project was made for bigger format events such as big clubs and festivals. In 2019 @pla- yof featured biggest festivals in the Czech Republic such as Beats For Love, Colours of Ostrava or High Jump.',
+    videos: 'Videos',
+    actions: 'Actions',
+    cooperation: 'Cooperations',
   },
 };
