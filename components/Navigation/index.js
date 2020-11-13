@@ -25,7 +25,7 @@ const Navigation = () => {
     <Wrapper>
       <NavBarWrapper $showNavbar={showNavbar}>
         <ul>
-          <Link href="/portfolio">
+          <Link href="/">
             <li>{t('portfolio')}</li>
           </Link>
           <Link href="/">
@@ -41,7 +41,7 @@ const Navigation = () => {
         <Link href="/">
           <Img src={homeIcon} />
         </Link>
-        <Img src={languageIcon} width={140} onClick={handleOnLanguageClick} />
+        <Img src={languageIcon} onClick={handleOnLanguageClick} />
       </LeftSide>
       {!showNavbar && (
         <RightSide>

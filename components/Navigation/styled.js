@@ -1,44 +1,84 @@
-import styled from 'styled-components';
+import { isMobile } from 'react-device-detect';
+import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
+  flex: 3;
   display: flex;
   justify-content: space-between;
-  padding-top: 0px;
 
-  @media only screen and (max-width: 600px) {
-    margin: unset;
+  @media only screen and (min-width: 375px) and (orientation: landscape) {
+    flex: 5;
+  }
+
+  @media only screen and (min-width: 700px) and (orientation: landscape) {
+    flex: 7;
+  }
+
+  @media only screen and (min-width: 375px) and (min-height: 660px) {
+    flex: 5;
+  }
+
+  @media only screen and (min-width: 768px) and (min-height: 1024px) {
+    flex: 10;
+  }
+
+  @media only screen and (min-width: 768px) and (orientation: landscape) {
+    flex: 10;
+  }
+
+  @media only screen and (min-width: 1000px) and (min-height: 1000px) {
+    flex: 7;
+  }
+
+  @media only screen and (min-width: 1000px) and (min-height: 1300px) {
+    flex: 15;
+  }
+
+  @media only screen and (min-width: 1000px) and (orientation: landscape) {
+    flex: 15;
+  }
+
+  @media only screen and (min-width: 1500px) and (min-height: 1300px) {
+    flex: 20;
   }
 `;
 
 export const LeftSide = styled.div`
-  margin-left: 10%;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 3%;
 
-  @media only screen and (max-width: 600px) {
-    margin: unset;
+  @media only screen and (min-width: 800px) {
+    margin-left: 5%;
   }
 `;
 
 export const RightSide = styled.div`
-  margin-right: 10%;
+  margin-right: 3%;
 
-  @media only screen and (max-width: 600px) {
-    margin: unset;
+  @media only screen and (min-width: 800px) {
+    margin-right: 5%;
   }
 `;
 
 export const Img = styled.img`
-  width: 80px;
-  height: 140px;
+  width: 60px;
+  height: 60px;
 
   :hover {
     cursor: pointer;
-    width: 90px;
   }
 
-  @media only screen and (max-width: 600px) {
-    width: 60px;
-    height: 60px;
-  }
+  ${() => {
+    if (!isMobile) {
+      return css`
+        :hover {
+          width: 70px;
+        }
+      `;
+    }
+  }}
 `;
 
 export const MenuIcon = styled.img`

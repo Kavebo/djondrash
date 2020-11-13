@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import background from '../../assets/images/background3.jpg';
 
 export const Wrapper = styled.div`
-  margin: 5px 15px 5px 10px;
   background: url(${background});
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,8 +13,8 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   flex-direction: column;
 
-  @media only screen and (max-width: 600px) {
-    margin: 0;
+  @media only screen and (min-width: 600px) {
+    margin: 5px;
   }
 `;
 
