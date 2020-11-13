@@ -5,15 +5,28 @@ import fbIcon from '../../assets/images/FB_icon.svg';
 import igIcon from '../../assets/images/IG_icon.svg';
 import spotifyIcon from '../../assets/images/SPOTIFY_icon.svg';
 import vimeoIcon from '../../assets/images/VIMEO_icon.svg';
-import { Column, DownloadIcon, EmailLink, IconsWrapper, Img, Link, Row, SignatureWrapper, Wrapper } from './styled';
+import {
+  Column,
+  DownloadIcon,
+  DownloadLinkWrapper,
+  EmailLink,
+  IconsWrapper,
+  Img,
+  Link,
+  Row,
+  SignatureWrapper,
+  Wrapper,
+} from './styled';
 
 const ThirdPart = () => {
   return (
     <Wrapper>
       <Column>
-        <Row>
-          <DownloadIcon src={downloadIcon} />
-        </Row>
+        <DownloadLinkWrapper>
+          <Link href="https://www.dropbox.com/sh/hbrg1m0fk8dqois/AABLSf1uBH9hPVuweScEUEFQa?dl=0" target="_blank">
+            <DownloadIcon src={downloadIcon} />
+          </Link>
+        </DownloadLinkWrapper>
         <Row>
           <EmailLink href="mailto: djondrash@gmail.com">djondrash@gmail.com</EmailLink>
         </Row>
@@ -24,7 +37,10 @@ const ThirdPart = () => {
           <Link href="https://www.instagram.com/djondrash/" target="_blank">
             <Img src={igIcon} />
           </Link>
-          <Link href="https://soundcloud.com/djondrash" target="_blank">
+          <Link
+            href="https://open.spotify.com/user/1uw2notq7eadot3ajdpjkneeh?si=P1klSqzDTRKkG_yN2PIp9Q"
+            target="_blank"
+          >
             <Img src={spotifyIcon} />
           </Link>
           <Link href="https://vimeo.com/ondrash" target="_blank">

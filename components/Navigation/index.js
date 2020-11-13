@@ -25,14 +25,11 @@ const Navigation = () => {
     <Wrapper>
       <NavBarWrapper $showNavbar={showNavbar}>
         <ul>
-          <Link href="/videos">
-            <li>{t('videos')}</li>
+          <Link href="/portfolio">
+            <li>{t('portfolio')}</li>
           </Link>
           <Link href="/">
-            <li>{t('actions')}</li>
-          </Link>
-          <Link href="/">
-            <li>{t('cooperation')}</li>
+            <li>{t('press')}</li>
           </Link>
         </ul>
         <MenuIconWrapper>

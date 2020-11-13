@@ -27,16 +27,17 @@ export const RightSide = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 100px;
+  width: 80px;
   height: 140px;
 
   :hover {
     cursor: pointer;
+    width: 90px;
   }
 
   @media only screen and (max-width: 600px) {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 `;
 
@@ -46,6 +47,7 @@ export const MenuIcon = styled.img`
 
   :hover {
     cursor: pointer;
+    width: 110px;
   }
 
   @media only screen and (max-width: 600px) {

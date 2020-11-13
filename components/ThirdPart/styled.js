@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import background from '../../assets/images/background3.jpg';
 
 export const Wrapper = styled.div`
+  margin: 5px 15px 5px 10px;
   background: url(${background});
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,32 +13,44 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+
+  @media only screen and (max-width: 600px) {
+    margin: 0;
+  }
 `;
 
 export const EmailLink = styled.a`
   color: #eadcca;
-  font-size: 55px;
+  font-size: 35px;
   margin: auto;
   font-family: 'Avenir Next';
 
   @media only screen and (max-width: 1000px) {
-    font-size: 40px;
+    font-size: 30px;
   }
 
-  @media only screen and (max-width: 1000px) {
-    font-size: 30px;
+  @media only screen and (max-width: 700px) {
+    font-size: 25px;
   }
 `;
 
 export const Img = styled.img``;
 
 export const Link = styled.a`
-  width: 100px;
+  width: 80px;
+
+  @media only screen and (max-width: 700px) {
+    width: 60px;
+  }
 `;
 
 export const DownloadIcon = styled.img`
-  width: 150px;
+  width: 120px;
   margin: auto;
+
+  @media only screen and (max-width: 700px) {
+    width: 70px;
+  }
 `;
 
 export const Row = styled.div`
@@ -45,6 +58,12 @@ export const Row = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  text-align: center;
+`;
+
+export const DownloadLinkWrapper = styled.div`
+  margin: 0 auto;
+  width: 100%;
   text-align: center;
 `;
 
