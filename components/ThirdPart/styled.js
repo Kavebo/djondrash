@@ -67,7 +67,9 @@ export const Img = styled.img`
   }}
 `;
 
-export const Link = styled.a``;
+export const Link = styled.a`
+  height: 100%;
+`;
 
 export const DownloadIcon = styled.img`
   width: 70px;
@@ -97,6 +99,7 @@ export const DownloadLinkWrapper = styled.div`
 `;
 
 export const IconsWrapper = styled(Row)`
+  height: 100px;
   width: 50%;
 
   @media only screen and (max-width: 700px) {

@@ -63,7 +63,7 @@ export const InfoWrapper = styled.div`
 export const Column = styled.div`
   display: block;
   flex: 1;
-  margin: 0 20px;
+  margin: 0 5%;
 `;
 
 export const Row = styled.div`

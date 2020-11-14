@@ -25,6 +25,7 @@ export const Wrapper = styled.div`
 
   @media only screen and (min-width: 768px) and (orientation: landscape) {
     flex: 10;
+    margin-top: 30px;
   }
 
   @media only screen and (min-width: 1000px) and (min-height: 1000px) {
@@ -53,19 +54,11 @@ export const MenuIconsWrapper = styled.div`
 export const LeftSide = styled.div`
   display: flex;
   justify-content: space-around;
-  margin-left: 10px;
-
-  @media only screen and (min-width: 900px) {
-    margin-left: 20px;
-  }
+  margin-left: 5%;
 `;
 
 export const RightSide = styled.div`
-  margin-right: 10px;
-
-  @media only screen and (min-width: 800px) {
-    margin-right: 20px;
-  }
+  margin-right: 5%;
 `;
 
 export const Img = styled.img`
@@ -76,12 +69,22 @@ export const Img = styled.img`
     cursor: pointer;
   }
 
+  @media only screen and (min-width: 768px) and (orientation: landscape) {
+    width: 70px;
+    height: 70px;
+  }
+
   ${() => {
     if (!isMobile) {
       return css`
         :hover {
           width: 60px;
           height: 60px;
+        }
+
+        @media only screen and (min-width: 768px) and (orientation: landscape) {
+          width: 80px;
+          height: 80px;
         }
       `;
     }
