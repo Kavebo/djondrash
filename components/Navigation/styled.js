@@ -83,8 +83,10 @@ export const Img = styled.img`
         }
 
         @media only screen and (min-width: 768px) and (orientation: landscape) {
-          width: 80px;
-          height: 80px;
+          :hover {
+            width: 80px;
+            height: 80px;
+          }
         }
       `;
     }
