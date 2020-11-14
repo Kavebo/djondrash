@@ -1,10 +1,9 @@
-import { isMobile } from 'react-device-detect';
 import styled, { css } from 'styled-components';
 
-import background1 from '../../assets/images/background1.jpg';
+import background from '../../assets/images/background1.jpg';
 
 export const Wrapper = styled.div`
-  background: url(${background1});
+  background: url(${background});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -14,8 +13,8 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   flex-direction: column;
 
-  @media only screen and (min-width: 600px) {
-    margin: ${() => (isMobile ? '0px' : '5px')};
+  @media only screen and (min-width: 1200px) {
+    margin: 5px;
   }
 `;
 
@@ -33,7 +32,7 @@ export const InfoWrapper = styled.div`
 
     p {
       padding: 0px;
-      margin-top: 2%;
+      margin-top: 10px;
     }
   }
 
@@ -43,7 +42,7 @@ export const InfoWrapper = styled.div`
 
     p {
       padding: 0px;
-      margin-top: 2%;
+      margin-top: 10px;
     }
   }
 
@@ -64,7 +63,7 @@ export const InfoWrapper = styled.div`
 export const Column = styled.div`
   display: block;
   flex: 1;
-  margin: 0 5%;
+  margin: 0 20px;
 `;
 
 export const Row = styled.div`
@@ -111,19 +110,9 @@ export const LogoWrapper = styled.div`
   justify-content: flex-end;
   width: 100%;
   text-align: right;
-
-  @media only screen and (min-width: 600px) {
-    /* width: 300px;
-    height: 150px; */
-  }
 `;
 
 export const LogoImage = styled.img`
   width: 40%;
   height: 20%;
-
-  @media only screen and (min-width: 600px) {
-    /* width: 300px;
-    height: 150px; */
-  }
 `;

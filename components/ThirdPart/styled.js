@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import { isMobile } from 'react-device-detect';
+import styled, { css } from 'styled-components';
 
 import background from '../../assets/images/background3.jpg';
 
@@ -13,7 +14,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   flex-direction: column;
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 1200px) {
     margin: 5px;
   }
 `;
@@ -33,22 +34,47 @@ export const EmailLink = styled.a`
   }
 `;
 
-export const Img = styled.img``;
-
-export const Link = styled.a`
+export const SocialIconWrapper = styled.div`
   width: 80px;
 
-  @media only screen and (max-width: 700px) {
-    width: 60px;
+  @media only screen and (min-width: 1000px) {
+    width: 120px;
   }
 `;
 
+export const Img = styled.img`
+  width: 40px;
+
+  @media only screen and (min-width: 700px) {
+    width: 80px;
+  }
+
+  ${() => {
+    if (!isMobile) {
+      return css`
+        :hover {
+          width: 70px;
+        }
+
+        @media only screen and (min-width: 700px) and (min-height: 600px) {
+          :hover {
+            width: 90px;
+            height: 90px;
+          }
+        }
+      `;
+    }
+  }}
+`;
+
+export const Link = styled.a``;
+
 export const DownloadIcon = styled.img`
-  width: 120px;
+  width: 70px;
   margin: auto;
 
-  @media only screen and (max-width: 700px) {
-    width: 70px;
+  @media only screen and (min-width: 700px) {
+    width: 120px;
   }
 `;
 
@@ -58,6 +84,10 @@ export const Row = styled.div`
   display: flex;
   justify-content: space-between;
   text-align: center;
+
+  @media only screen and (mix-width: 800px) {
+    min-height: 100px;
+  }
 `;
 
 export const DownloadLinkWrapper = styled.div`
@@ -79,7 +109,6 @@ export const IconsWrapper = styled(Row)`
 `;
 
 export const Column = styled.div`
-  padding: 10% 0 0 0;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;

@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   flex: 3;
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 
   @media only screen and (min-width: 375px) and (orientation: landscape) {
     flex: 5;
@@ -43,28 +44,33 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const MenuIconsWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+`;
+
 export const LeftSide = styled.div`
-  width: 100px;
   display: flex;
   justify-content: space-around;
-  margin-left: 3%;
+  margin-left: 10px;
 
-  @media only screen and (min-width: 800px) {
-    margin-left: 5%;
+  @media only screen and (min-width: 900px) {
+    margin-left: 20px;
   }
 `;
 
 export const RightSide = styled.div`
-  margin-right: 3%;
+  margin-right: 10px;
 
   @media only screen and (min-width: 800px) {
-    margin-right: 5%;
+    margin-right: 20px;
   }
 `;
 
 export const Img = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 
   :hover {
     cursor: pointer;
@@ -74,26 +80,12 @@ export const Img = styled.img`
     if (!isMobile) {
       return css`
         :hover {
-          width: 70px;
+          width: 60px;
+          height: 60px;
         }
       `;
     }
   }}
-`;
-
-export const MenuIcon = styled.img`
-  width: 100px;
-  height: 50px;
-
-  :hover {
-    cursor: pointer;
-    width: 110px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    width: 40px;
-    height: 40px;
-  }
 `;
 
 export const NavBarWrapper = styled.div`

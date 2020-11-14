@@ -15,6 +15,7 @@ import {
   Link,
   Row,
   SignatureWrapper,
+  SocialIconWrapper,
   Wrapper,
 } from './styled';
 
@@ -31,21 +32,29 @@ const ThirdPart = () => {
           <EmailLink href="mailto: djondrash@gmail.com">djondrash@gmail.com</EmailLink>
         </Row>
         <IconsWrapper>
-          <Link href="https://www.facebook.com/djondrash/" target="_blank">
-            <Img src={fbIcon} />
-          </Link>
-          <Link href="https://www.instagram.com/djondrash/" target="_blank">
-            <Img src={igIcon} />
-          </Link>
-          <Link
-            href="https://open.spotify.com/user/1uw2notq7eadot3ajdpjkneeh?si=P1klSqzDTRKkG_yN2PIp9Q"
-            target="_blank"
-          >
-            <Img src={spotifyIcon} />
-          </Link>
-          <Link href="https://vimeo.com/ondrash" target="_blank">
-            <Img src={vimeoIcon} />
-          </Link>
+          <SocialIconWrapper>
+            <Link href="https://www.facebook.com/djondrash/" target="_blank">
+              <Img src={fbIcon} />
+            </Link>
+          </SocialIconWrapper>
+          <SocialIconWrapper>
+            <Link href="https://www.instagram.com/djondrash/" target="_blank">
+              <Img src={igIcon} />
+            </Link>
+          </SocialIconWrapper>
+          <SocialIconWrapper>
+            <Link
+              href="https://open.spotify.com/user/1uw2notq7eadot3ajdpjkneeh?si=P1klSqzDTRKkG_yN2PIp9Q"
+              target="_blank"
+            >
+              <Img src={spotifyIcon} />
+            </Link>
+          </SocialIconWrapper>
+          <SocialIconWrapper>
+            <Link href="https://vimeo.com/ondrash" target="_blank">
+              <Img src={vimeoIcon} />
+            </Link>
+          </SocialIconWrapper>
         </IconsWrapper>
       </Column>
       <SignatureWrapper>

@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 140vh;
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 1200px) {
     margin: 5px;
   }
 `;
