@@ -71,12 +71,27 @@ export const Link = styled.a`
   height: 100%;
 `;
 
+export const DownloadLinkWrapper = styled.div`
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  height: 140px;
+`;
+
 export const DownloadIcon = styled.img`
   width: 70px;
   margin: auto;
 
+  :hover {
+    width: 80px;
+  }
+
   @media only screen and (min-width: 700px) {
     width: 120px;
+
+    :hover {
+      width: 130px;
+    }
   }
 `;
 
@@ -90,12 +105,6 @@ export const Row = styled.div`
   @media only screen and (mix-width: 800px) {
     min-height: 100px;
   }
-`;
-
-export const DownloadLinkWrapper = styled.div`
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
 `;
 
 export const IconsWrapper = styled(Row)`

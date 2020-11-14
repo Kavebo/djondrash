@@ -5,7 +5,11 @@ export const Wrapper = styled.div`
   flex: 3;
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 0px;
+
+  @media only screen and (min-width: 560px) and (min-width: 310px) {
+    flex: 2;
+  }
 
   @media only screen and (min-width: 375px) and (orientation: landscape) {
     flex: 5;

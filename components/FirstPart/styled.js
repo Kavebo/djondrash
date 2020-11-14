@@ -28,11 +28,11 @@ export const InfoWrapper = styled.div`
   @media only screen and (min-width: 550px) and (orientation: landscape) {
     flex-direction: row;
     justify-content: space-between;
-    font-size: 11px;
+    font-size: 10px;
 
     p {
       padding: 0px;
-      margin-top: 10px;
+      margin-top: 0px;
     }
   }
 
@@ -76,6 +76,7 @@ export const Separator = styled.p`
 
   @media only screen and (min-width: 600px) {
     display: block;
+    height: 6%;
   }
 `;
 
@@ -83,6 +84,10 @@ export const Text = styled.p`
   color: #eadcca;
   text-align: justify;
   margin: 22px 0;
+
+  :first-child {
+    margin-right: 5px;
+  }
 
   @media only screen and (max-width: 400px) {
     margin: 10px 0;
