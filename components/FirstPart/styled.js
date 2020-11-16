@@ -1,9 +1,10 @@
 import styled, { css } from 'styled-components';
 
 import background from '../../assets/images/background1.jpg';
+import backgroundPhone from '../../assets/images/background1_phone.jpg';
 
 export const Wrapper = styled.div`
-  background: url(${background});
+  background: url(${backgroundPhone});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -15,6 +16,10 @@ export const Wrapper = styled.div`
 
   @media only screen and (min-width: 1200px) {
     margin: 5px;
+    background: url(${background});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 `;
 
