@@ -57,12 +57,14 @@ export const MenuIconsWrapper = styled.div`
 
 export const LeftSide = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-left: 5%;
+  width: 120px;
 `;
 
 export const RightSide = styled.div`
   margin-right: 5%;
+  width: 50px;
 `;
 
 export const Img = styled.img`
@@ -148,4 +150,8 @@ export const NavBarWrapper = styled.div`
 
 export const MenuIconWrapper = styled.div`
   margin: 0 auto;
+`;
+
+export const ImageWrapper = styled.div`
+  width: 70px;
 `;

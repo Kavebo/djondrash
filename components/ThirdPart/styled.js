@@ -25,17 +25,30 @@ export const Wrapper = styled.div`
 `;
 
 export const EmailLink = styled.a`
+  min-height: 60px;
   color: #eadcca;
   font-size: 35px;
   margin: auto;
   font-family: 'Avenir Next';
 
+  :hover {
+    font-size: 37px;
+  }
+
   @media only screen and (max-width: 1000px) {
     font-size: 30px;
+
+    :hover {
+      font-size: 32px;
+    }
   }
 
   @media only screen and (max-width: 700px) {
     font-size: 25px;
+
+    :hover {
+      font-size: 27px;
+    }
   }
 `;
 
