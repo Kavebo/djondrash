@@ -6,47 +6,6 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 0px;
-
-  @media only screen and (min-width: 560px) and (min-width: 310px) {
-    flex: 2;
-  }
-
-  @media only screen and (min-width: 375px) and (orientation: landscape) {
-    flex: 5;
-  }
-
-  @media only screen and (min-width: 700px) and (orientation: landscape) {
-    flex: 7;
-  }
-
-  @media only screen and (min-width: 375px) and (min-height: 660px) {
-    flex: 5;
-  }
-
-  @media only screen and (min-width: 768px) and (min-height: 1024px) {
-    flex: 10;
-  }
-
-  @media only screen and (min-width: 768px) and (orientation: landscape) {
-    flex: 10;
-    margin-top: 30px;
-  }
-
-  @media only screen and (min-width: 1000px) and (min-height: 1000px) {
-    flex: 7;
-  }
-
-  @media only screen and (min-width: 1000px) and (min-height: 1300px) {
-    flex: 15;
-  }
-
-  @media only screen and (min-width: 1000px) and (orientation: landscape) {
-    flex: 15;
-  }
-
-  @media only screen and (min-width: 1500px) and (min-height: 1300px) {
-    flex: 20;
-  }
 `;
 
 export const MenuIconsWrapper = styled.div`

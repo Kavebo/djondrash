@@ -24,11 +24,13 @@ export const Wrapper = styled.div`
 `;
 
 export const InfoWrapper = styled.div`
+  position: absolute;
+  bottom: -35%;
   flex: 10;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 10px;
 
   @media only screen and (min-width: 550px) and (orientation: landscape) {
     flex-direction: row;
@@ -36,8 +38,8 @@ export const InfoWrapper = styled.div`
     font-size: 10px;
 
     p {
-      padding: 0px;
-      margin-top: 0px;
+      /* padding: 0px; */
+      margin-bottom: 10px;
     }
   }
 
@@ -68,34 +70,47 @@ export const InfoWrapper = styled.div`
 export const Column = styled.div`
   display: block;
   flex: 1;
-  margin: 0 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+  ${({ $isPortraitMode }) => {
+    if ($isPortraitMode) {
+      return css`
+        margin-bottom: 5%;
+      `;
+    }
+  }}
+`;
+
+export const MainColumn = styled.div`
+  display: block;
+  flex: 1;
 `;
 
 export const Row = styled.div`
   display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
 `;
 
-export const Separator = styled.p`
-  margin-top: 88px;
-  display: none;
-
-  @media only screen and (min-width: 600px) {
-    display: block;
-    height: 6%;
-  }
+export const TextInOneRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex: 1;
 `;
 
 export const Text = styled.p`
   color: #eadcca;
   text-align: justify;
-  margin: 22px 0;
+  margin: 0;
 
   :first-child {
     margin-right: 5px;
   }
 
-  @media only screen and (max-width: 400px) {
-    margin: 10px 0;
+  @media only screen and (min-width: 1000px) {
+    margin-bottom: 10px;
   }
 
   ${({ $hideInMobile }) => {
@@ -116,6 +131,7 @@ export const TextBold = styled(Text)`
 `;
 
 export const LogoWrapper = styled.div`
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -125,4 +141,5 @@ export const LogoWrapper = styled.div`
 export const LogoImage = styled.img`
   width: 40%;
   height: 20%;
+  margin: 5%;
 `;
