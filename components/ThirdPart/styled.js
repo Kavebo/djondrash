@@ -13,10 +13,6 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-
-  @media only screen and (min-width: 1200px) {
-    margin: 5px;
-  }
 `;
 
 export const EmailLink = styled.a`

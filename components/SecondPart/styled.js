@@ -9,10 +9,6 @@ export const Wrapper = styled.div`
   background-position: center center;
   width: 100%;
   height: 140vh;
-
-  @media only screen and (min-width: 1200px) {
-    margin: 5px;
-  }
 `;
 
 export const ImageWrapper = styled.div`
