@@ -41,9 +41,11 @@ const FirstPart = () => {
       <Column $isPortraitMode={true}>
         <Text>{t('about4')}</Text>
       </Column>
-      <LogoWrapper>
-        <LogoImage src={logo} width={200} />
-      </LogoWrapper>
+      <Column>
+        <LogoWrapper>
+          <LogoImage src={logo} width={200} />
+        </LogoWrapper>
+      </Column>
     </MainColumn>
   );
 

@@ -29,7 +29,6 @@ export const InfoWrapper = styled.div`
     font-size: 10px;
 
     p {
-      /* padding: 0px; */
       margin-bottom: 10px;
     }
   }
@@ -53,8 +52,16 @@ export const InfoWrapper = styled.div`
     }
   }
 
-  @media only screen and (min-width: 1000px) and (orientation: landscape) {
-    font-size: 18px;
+  @media only screen and (min-width: 1000px) {
+    p {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 1400px) {
+    p {
+      font-size: 25px;
+    }
   }
 `;
 
@@ -132,5 +139,4 @@ export const LogoWrapper = styled.div`
 export const LogoImage = styled.img`
   width: 40%;
   height: 20%;
-  margin: 5%;
 `;
