@@ -54,7 +54,7 @@ export const InfoWrapper = styled.div`
 
   @media only screen and (min-width: 1000px) {
     p {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 
