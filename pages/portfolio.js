@@ -1,7 +1,8 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Portfolio = () => {
-  return <div>Portfolio</div>;
+  return <Link href="/">Portfolio</Link>;
 };
 
 export default Portfolio;
