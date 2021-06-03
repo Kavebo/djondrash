@@ -24,7 +24,7 @@ export const languagesStrings = {
       'Besides DJ competitions I have been participating in Ben Cristovao ́s RedBull Tour in 2019 which ended in sold out O2 Arena.',
     about4:
       'Meanwhile, I have been working on a project called @playof. This project was made for bigger format events such as big clubs and festivals. In 2019 @playof featured biggest festivals in the Czech Republic such as Beats For Love, Colours of Ostrava or High Jump.',
-    videos: 'Videos',
+    portfolio: 'Videos',
     press: 'Press',
   },
 };

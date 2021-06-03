@@ -52,23 +52,19 @@ export const SocialIconWrapper = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 40px;
-
-  @media only screen and (min-width: 700px) {
-    width: 80px;
-  }
+  width: fit-content;
+  max-width: 80px;
 
   ${() => {
     if (!isMobile) {
       return css`
         :hover {
-          width: 70px;
+          margin-top: 10px;
         }
 
         @media only screen and (min-width: 700px) and (min-height: 600px) {
           :hover {
-            width: 90px;
-            height: 90px;
+            margin-top: 10px;
           }
         }
       `;

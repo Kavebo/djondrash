@@ -1,10 +1,9 @@
 import React from 'react';
 
 import downloadIcon from '../../assets/images/Download_button.svg';
-import fbIcon from '../../assets/images/FB_icon.svg';
-import igIcon from '../../assets/images/IG_icon.svg';
-import spotifyIcon from '../../assets/images/SPOTIFY_icon.svg';
-import vimeoIcon from '../../assets/images/VIMEO_icon.svg';
+import ytIcon from '../../assets/images/yt_icon.png';
+import sc_icon from '../../assets/images/sc_icon.png';
+import spotifyIcon from '../../assets/images/SPOTIFY_icon.png';
 import {
   Column,
   DownloadIcon,
@@ -33,13 +32,13 @@ const ThirdPart = () => {
         </Row>
         <IconsWrapper>
           <SocialIconWrapper>
-            <Link href="https://www.facebook.com/djondrash/" target="_blank">
-              <Img src={fbIcon} />
+            <Link href="https://www.youtube.com/channel/UCrX211qiOB5XE3NSBuM-xbg" target="_blank">
+              <Img src={ytIcon} />
             </Link>
           </SocialIconWrapper>
           <SocialIconWrapper>
-            <Link href="https://www.instagram.com/djondrash/" target="_blank">
-              <Img src={igIcon} />
+            <Link href="https://soundcloud.com/djondrash" target="_blank">
+              <Img src={sc_icon} />
             </Link>
           </SocialIconWrapper>
           <SocialIconWrapper>
@@ -48,11 +47,6 @@ const ThirdPart = () => {
               target="_blank"
             >
               <Img src={spotifyIcon} />
-            </Link>
-          </SocialIconWrapper>
-          <SocialIconWrapper>
-            <Link href="https://vimeo.com/ondrash" target="_blank">
-              <Img src={vimeoIcon} />
             </Link>
           </SocialIconWrapper>
         </IconsWrapper>
