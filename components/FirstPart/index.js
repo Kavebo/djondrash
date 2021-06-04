@@ -23,6 +23,7 @@ const FirstPart = () => {
 
   const BodyPortrait = () => (
     <MainColumn>
+      <h1 style={{ display: 'none' }}>DJ Ondrash</h1>
       <Column $isPortraitMode={true}>
         <TextInOneRow>
           <Text>{t('hey1')}</Text>
@@ -43,7 +44,7 @@ const FirstPart = () => {
       </Column>
       <Column>
         <LogoWrapper>
-          <LogoImage src={logo} width={200} />
+          <LogoImage src={logo} alt="dj ondrash logo" width={200} />
         </LogoWrapper>
       </Column>
     </MainColumn>

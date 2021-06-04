@@ -16,6 +16,7 @@ import {
   SignatureWrapper,
   SocialIconWrapper,
   Wrapper,
+  BackgroundImage,
 } from './styled';
 
 const ThirdPart = () => {
@@ -24,7 +25,7 @@ const ThirdPart = () => {
       <Column>
         <DownloadLinkWrapper>
           <Link href="https://www.dropbox.com/sh/hbrg1m0fk8dqois/AABLSf1uBH9hPVuweScEUEFQa?dl=0" target="_blank">
-            <DownloadIcon src={downloadIcon} />
+            <DownloadIcon src={downloadIcon} alt="djondrash content" />
           </Link>
         </DownloadLinkWrapper>
         <Row>
@@ -33,12 +34,12 @@ const ThirdPart = () => {
         <IconsWrapper>
           <SocialIconWrapper>
             <Link href="https://www.youtube.com/channel/UCrX211qiOB5XE3NSBuM-xbg" target="_blank">
-              <Img src={youtubeIcon} />
+              <Img src={youtubeIcon} alt="DjOndrash youtube" />
             </Link>
           </SocialIconWrapper>
           <SocialIconWrapper>
             <Link href="https://soundcloud.com/djondrash" target="_blank">
-              <Img src={soundcloudIcon} />
+              <Img src={soundcloudIcon} alt="DjOndrash soundcloud" />
             </Link>
           </SocialIconWrapper>
           <SocialIconWrapper>
@@ -46,7 +47,7 @@ const ThirdPart = () => {
               href="https://open.spotify.com/user/1uw2notq7eadot3ajdpjkneeh?si=P1klSqzDTRKkG_yN2PIp9Q"
               target="_blank"
             >
-              <Img src={spotify_logo_dark} />
+              <Img src={spotify_logo_dark} alt="DjOndrash spotify" />
             </Link>
           </SocialIconWrapper>
         </IconsWrapper>
