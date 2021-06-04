@@ -6,9 +6,9 @@ export const Wrapper = styled.div`
   background: url(${backgroundPhone});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   width: 100%;
-  height: 140vh;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
 
 export const InfoWrapper = styled.div`
   position: absolute;
-  bottom: -35%;
+  bottom: 5%;
   flex: 10;
   display: flex;
   justify-content: space-between;
