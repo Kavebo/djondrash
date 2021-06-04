@@ -1,9 +1,9 @@
 import React from 'react';
 
 import downloadIcon from '../../assets/images/Download_button.svg';
-import ytIcon from '../../assets/images/yt_icon.png';
-import sc_icon from '../../assets/images/sc_icon.png';
-import spotifyIcon from '../../assets/images/SPOTIFY_icon.png';
+import youtubeIcon from '../../assets/images/youtube_icon_dark2.png';
+import soundcloudIcon from '../../assets/images/soundcloud_dark.png';
+import spotify_logo_dark from '../../assets/images/spotify_logo_dark2.png';
 import {
   Column,
   DownloadIcon,
@@ -33,12 +33,12 @@ const ThirdPart = () => {
         <IconsWrapper>
           <SocialIconWrapper>
             <Link href="https://www.youtube.com/channel/UCrX211qiOB5XE3NSBuM-xbg" target="_blank">
-              <Img src={ytIcon} />
+              <Img src={youtubeIcon} />
             </Link>
           </SocialIconWrapper>
           <SocialIconWrapper>
             <Link href="https://soundcloud.com/djondrash" target="_blank">
-              <Img src={sc_icon} />
+              <Img src={soundcloudIcon} />
             </Link>
           </SocialIconWrapper>
           <SocialIconWrapper>
@@ -46,7 +46,7 @@ const ThirdPart = () => {
               href="https://open.spotify.com/user/1uw2notq7eadot3ajdpjkneeh?si=P1klSqzDTRKkG_yN2PIp9Q"
               target="_blank"
             >
-              <Img src={spotifyIcon} />
+              <Img src={spotify_logo_dark} />
             </Link>
           </SocialIconWrapper>
         </IconsWrapper>

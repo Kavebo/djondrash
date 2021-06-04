@@ -6,7 +6,16 @@ import homeIcon from '../../assets/images/HOME_button.svg';
 import menuIcon from '../../assets/images/MENU_button.svg';
 import { useTranslation } from '../../languages';
 import { LanguageContext, locales } from '../../languages/LanguageProvider';
-import { ImageWrapper, Img, LeftSide, MenuIconsWrapper, MenuIconWrapper, NavBarWrapper, RightSide, Wrapper } from './styled';
+import {
+  ImageWrapper,
+  Img,
+  LeftSide,
+  MenuIconsWrapper,
+  MenuIconWrapper,
+  NavBarWrapper,
+  RightSide,
+  Wrapper,
+} from './styled';
 
 const Navigation = () => {
   const [locale, setLocale] = useContext(LanguageContext);
@@ -26,7 +35,7 @@ const Navigation = () => {
       <NavBarWrapper $showNavbar={showNavbar}>
         <ul>
           <Link href="/">
-            <li>{t('portfolio')}</li>
+            <li>{t('videos')}</li>
           </Link>
           <Link href="/">
             <li>{t('press')}</li>
