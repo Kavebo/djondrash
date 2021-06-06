@@ -45,6 +45,7 @@ export const EmailLink = styled.a`
 
 export const SocialIconWrapper = styled.div`
   width: 80px;
+  margin: auto;
 
   @media only screen and (min-width: 1000px) {
     width: 120px;
@@ -53,18 +54,18 @@ export const SocialIconWrapper = styled.div`
 
 export const Img = styled.img`
   width: fit-content;
-  max-width: 80px;
+  max-width: 50px;
 
   ${() => {
     if (!isMobile) {
       return css`
         :hover {
-          margin-top: 10px;
+          max-width: 55px;
         }
 
         @media only screen and (min-width: 700px) and (min-height: 600px) {
           :hover {
-            margin-top: 10px;
+            max-width: 55px;
           }
         }
       `;

@@ -35,10 +35,13 @@ const Navigation = () => {
       <NavBarWrapper $showNavbar={showNavbar}>
         <ul>
           <Link href="/">
-            <li>{t('videos')}</li>
+            <li>{t('pictures')}</li>
           </Link>
           <Link href="/">
             <li>{t('press')}</li>
+          </Link>
+          <Link href="/">
+            <li>{t('shows')}</li>
           </Link>
         </ul>
         <MenuIconWrapper>

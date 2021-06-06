@@ -38,16 +38,16 @@ const ThirdPart = () => {
             </Link>
           </SocialIconWrapper>
           <SocialIconWrapper>
-            <Link href="https://soundcloud.com/djondrash" target="_blank">
-              <Img src={soundcloudIcon} alt="DJ Ondrash soundcloud" />
-            </Link>
-          </SocialIconWrapper>
-          <SocialIconWrapper>
             <Link
               href="https://open.spotify.com/user/1uw2notq7eadot3ajdpjkneeh?si=P1klSqzDTRKkG_yN2PIp9Q"
               target="_blank"
             >
               <Img src={spotify_logo_dark} alt="DJ Ondrash spotify" />
+            </Link>
+          </SocialIconWrapper>
+          <SocialIconWrapper>
+            <Link href="https://soundcloud.com/djondrash" target="_blank">
+              <Img src={soundcloudIcon} alt="DJ Ondrash soundcloud" />
             </Link>
           </SocialIconWrapper>
         </IconsWrapper>
