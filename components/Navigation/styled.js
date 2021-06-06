@@ -2,7 +2,7 @@ import { isMobile } from 'react-device-detect';
 import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
-  flex: 3;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   margin-top: 0px;

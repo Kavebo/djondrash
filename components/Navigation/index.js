@@ -34,7 +34,7 @@ const Navigation = () => {
     <Wrapper>
       <NavBarWrapper $showNavbar={showNavbar}>
         <ul>
-          <Link href="/">
+          <Link href="/pictures">
             <li>{t('pictures')}</li>
           </Link>
           <Link href="/">
