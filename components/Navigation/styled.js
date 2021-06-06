@@ -29,6 +29,7 @@ export const RightSide = styled.div`
 export const Img = styled.img`
   width: 50px;
   height: 50px;
+  transition: all 0.15s linear;
 
   :hover {
     cursor: pointer;

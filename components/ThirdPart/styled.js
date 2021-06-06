@@ -21,6 +21,7 @@ export const EmailLink = styled.a`
   font-size: 35px;
   margin: auto;
   font-family: 'Avenir Next';
+  transition: all 0.15s linear;
 
   :hover {
     font-size: 37px;
@@ -55,6 +56,7 @@ export const SocialIconWrapper = styled.div`
 export const Img = styled.img`
   width: fit-content;
   max-width: 50px;
+  transition: all 0.15s linear;
 
   ${() => {
     if (!isMobile) {
@@ -87,6 +89,7 @@ export const DownloadLinkWrapper = styled.div`
 export const DownloadIcon = styled.img`
   width: 70px;
   margin: auto;
+  transition: all 0.15s linear;
 
   :hover {
     width: 80px;
