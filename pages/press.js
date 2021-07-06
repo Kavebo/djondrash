@@ -49,6 +49,12 @@ export const PressImage = styled.img`
 export const H1 = styled.h1`
   color: white;
   margin-left: 5%;
+
+  @media only screen and (min-width: 1024px) and (orientation: landscape) {
+    max-width: 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 15%;
+  }
 `;
 
 const Press = () => {
