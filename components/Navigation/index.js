@@ -37,10 +37,10 @@ const Navigation = () => {
           <Link href="/pictures">
             <li>{t('pictures')}</li>
           </Link>
-          <Link href="/">
+          <Link href="/press">
             <li>{t('press')}</li>
           </Link>
-          <Link href="/">
+          <Link href="/shows">
             <li>{t('shows')}</li>
           </Link>
         </ul>

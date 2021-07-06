@@ -61,6 +61,7 @@ export const Img = styled.img`
 
 export const NavBarWrapper = styled.div`
   width: 100%;
+  max-width: 100vw;
   background: rgba(0, 0, 0, 0.9);
   display: ${({ $showNavbar }) => ($showNavbar ? 'flex' : 'none')};
   flex-direction: column;

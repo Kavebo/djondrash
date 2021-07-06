@@ -13,6 +13,11 @@ export const languagesStrings = {
     pictures: 'Obrázky',
     press: 'Články',
     shows: 'Koncerty',
+    shows_table_label: 'Místa koncertů',
+    shows_table_date: 'Datum',
+    shows_table_name: 'Název',
+    shows_table_place: 'Místo',
+    press_title: 'Články',
   },
   en: {
     hey1: 'Hey! ',
@@ -28,5 +33,10 @@ export const languagesStrings = {
     pictures: 'Pictures',
     press: 'Press',
     shows: 'Shows',
+    shows_table_label: 'Shows place',
+    shows_table_date: 'Date',
+    shows_table_name: 'Show',
+    shows_table_place: 'Place',
+    press_title: 'Press',
   },
 };

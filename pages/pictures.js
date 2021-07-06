@@ -14,12 +14,13 @@ const Wrapper = styled.div`
   background-size: cover;
   width: 100%;
   height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 `;
 
-const GalleryWrapper = styled.div`
+const ContentWrapper = styled.div`
   flex: 1;
   height: 100vh;
   margin: auto;
@@ -53,9 +54,9 @@ const Pictures = () => {
         <meta name="description" content="DJ Ondrash's pictures from his actions and concerts." />
       </Head>
       <Navigation />
-      <GalleryWrapper>
+      <ContentWrapper>
         <Gallery photos={photos} onClick={openLightbox} />
-      </GalleryWrapper>
+      </ContentWrapper>
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
