@@ -9,8 +9,8 @@ export const photos = [
   },
   {
     src: img2,
-    width: 4,
-    height: 3,
+    width: 3,
+    height: 2,
   },
   {
     src: 'https://source.unsplash.com/epcsn8Ed8kY/600x799',

@@ -5,7 +5,6 @@ const CardWrapper = styled.div`
   background-color: darkgray;
   margin: 10px;
   padding: 5px;
-  border-radius: 10px;
   transition: all 0.15s linear;
 
   :hover {

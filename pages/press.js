@@ -11,7 +11,6 @@ import { useTranslation } from '../languages';
 const Wrapper = styled.div`
   background: url(${background});
   background-repeat: repeat;
-  background-size: cover;
   width: 100%;
   height: 100%;
   min-height: 100vh;
@@ -41,7 +40,6 @@ const ContentWrapper = styled.div`
 
 export const PressImage = styled.img`
   width: 40%;
-  border-radius: 10px;
   width: fit-content;
   max-width: 100%;
 `;
