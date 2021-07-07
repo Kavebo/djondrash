@@ -4,6 +4,7 @@ import Router from 'next/router';
 import NProgress from 'nprogress';
 
 import { LanguageProvider } from '../languages';
+import GlobalStyle from '../constants/globalStyle';
 
 NProgress.configure({
   minimum: 0.3,
@@ -21,6 +22,7 @@ Router.events.on('routeChangeError', () => NProgress.done());
 function MyApp({ Component, pageProps }) {
   return (
     <LanguageProvider>
+      <GlobalStyle />
       <Component {...pageProps} />
     </LanguageProvider>
   );

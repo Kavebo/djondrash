@@ -2,7 +2,7 @@ import { isMobile } from 'react-device-detect';
 import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
-  flex: 3;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   margin-top: 0px;
@@ -61,6 +61,7 @@ export const Img = styled.img`
 
 export const NavBarWrapper = styled.div`
   width: 100%;
+  max-width: 100vw;
   background: rgba(0, 0, 0, 0.9);
   display: ${({ $showNavbar }) => ($showNavbar ? 'flex' : 'none')};
   flex-direction: column;
