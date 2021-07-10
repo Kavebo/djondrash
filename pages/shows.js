@@ -44,9 +44,6 @@ const useStyles = makeStyles({
   container: {
     backgroundColor: 'transparent',
   },
-  label: {
-    color: 'white',
-  },
 });
 
 const Shows = () => {
@@ -63,7 +60,6 @@ const Shows = () => {
       </Head>
       <Navigation />
       <GalleryWrapper>
-        <h1 className={classes.label}>{t('shows_table_label')}</h1>
         <TableContainer className={classes.container} component={Paper}>
           <Table className={classes.table} aria-label="simple table">
             <TableHead>

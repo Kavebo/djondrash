@@ -44,17 +44,6 @@ export const PressImage = styled.img`
   max-width: 100%;
 `;
 
-export const H1 = styled.h1`
-  color: white;
-  margin-left: 5%;
-
-  @media only screen and (min-width: 1024px) and (orientation: landscape) {
-    max-width: 70%;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 15%;
-  }
-`;
-
 const Press = () => {
   const { t } = useTranslation();
 
@@ -67,7 +56,6 @@ const Press = () => {
         <meta name="description" content="Articles about DJ Ondrash ." />
       </Head>
       <Navigation />
-      <H1>{t('press_title')}</H1>
       <ContentWrapper>
         {pressData.map(({ link, image }) => (
           <a href={link} target="_blank" key={link}>
