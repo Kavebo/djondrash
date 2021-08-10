@@ -38,7 +38,7 @@ export const photos = [
     height: 3,
   },
    {
-    src: 'https://img.redbull.com/images/c_fill,w_1600,h_1167,g_auto,f_auto,q_auto/redbullcom/2018/09/10/9caffaf4-c373-4f43-9ede-59726c2361a6/djing-hudba-serie-livin-dereck-hard,
+    src: 'https://img.redbull.com/images/c_fill,w_1600,h_1167,g_auto,f_auto,q_auto/redbullcom/2018/09/10/9caffaf4-c373-4f43-9ede-59726c2361a6/djing-hudba-serie-livin-dereck-hard',
     width: 4,
     height: 3,
   },
