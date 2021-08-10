@@ -13,7 +13,7 @@ import Paper from '@material-ui/core/Paper';
 import { useTranslation } from '../languages';
 import background from '../assets/images/background3_phone.jpg';
 import Navigation from '../components/Navigation';
-import tableData from '../constants/shows.json';
+import tableData from '../constants/shows';
 
 const Wrapper = styled.div`
   background: url(${background});
