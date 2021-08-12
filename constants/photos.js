@@ -53,4 +53,29 @@ export const photos = [
     width: 4,
     height: 4,
   },
+  {
+    src: img9,
+    width: 4,
+    height: 4,
+  },
+  {
+    src: img10,
+    width: 4,
+    height: 4,
+  },
+  {
+    src: img11,
+    width: 4,
+    height: 4,
+  },
+  {
+    src: img12,
+    width: 4,
+    height: 4,
+  },
+  {
+    src: img13,
+    width: 4,
+    height: 4,
+  },
 ];
