@@ -29,27 +29,27 @@ export const photos = [
     height: 3,
   },
   {
-    src: 'https://source.unsplash.com/NQSWvyVRIJk/800x599',
-    width: 4,
-    height: 3,
-  },
-  {
-    src: 'https://source.unsplash.com/zh7GEuORbUw/600x799',
-    width: 3,
-    height: 4,
-  },
-  {
-    src: 'https://source.unsplash.com/PpOHJezOalU/800x599',
-    width: 4,
-    height: 3,
-  },
-  {
-    src: 'https://source.unsplash.com/I1ASdgphUH4/800x599',
+    src: img4,
     width: 4,
     height: 3,
   },
    {
-    src: 'https://img.redbull.com/images/c_fill,w_1600,h_1167,g_auto,f_auto,q_auto/redbullcom/2018/09/10/9caffaf4-c373-4f43-9ede-59726c2361a6/djing-hudba-serie-livin-dereck-hard',
+    src: img5,
+    width: 4,
+    height: 3,
+  },
+  {
+    src: img6,
+    width: 4,
+    height: 3,
+  },
+  {
+    src: img7,
+    width: 4,
+    height: 3,
+  },
+  {
+    src: img8,
     width: 4,
     height: 3,
   },
