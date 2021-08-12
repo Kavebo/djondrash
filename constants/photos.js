@@ -16,41 +16,41 @@ export const photos = [
   {
     src: img1,
     width: 4,
-    height: 3,
+    height: 4,
   },
   {
     src: img2,
     width: 4,
-    height: 3,
+    height: 4,
   },
    {
     src: img3,
     width: 4,
-    height: 3,
+    height: 4,
   },
   {
     src: img4,
     width: 4,
-    height: 3,
+    height: 4,
   },
    {
     src: img5,
     width: 4,
-    height: 3,
+    height: 4,
   },
   {
     src: img6,
     width: 4,
-    height: 3,
+    height: 4,
   },
   {
     src: img7,
     width: 4,
-    height: 3,
+    height: 4,
   },
   {
     src: img8,
     width: 4,
-    height: 3,
+    height: 4,
   },
 ];
