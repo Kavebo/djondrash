@@ -15,42 +15,42 @@ import img13 from '../assets/images/gallery/img_13.png';
 export const photos = [
   {
     src: img1,
-    width: 3,
+    width: 4,
     height: 3,
   },
   {
     src: img2,
-    width: 3,
+    width: 4,
     height: 3,
   },
    {
     src: img3,
-    width: 3,
+    width: 4,
     height: 3,
   },
   {
     src: img4,
-    width: 3,
+    width: 4,
     height: 3,
   },
    {
     src: img5,
-    width: 3,
+    width: 4,
     height: 3,
   },
   {
     src: img6,
-    width: 3,
+    width: 4,
     height: 3,
   },
   {
     src: img7,
-    width: 3,
+    width: 4,
     height: 3,
   },
   {
     src: img8,
-    width: 3,
+    width: 4,
     height: 3,
   },
 ];
