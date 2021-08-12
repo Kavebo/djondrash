@@ -21,7 +21,7 @@ export const photos = [
   {
     src: img2,
     width: 3,
-    height: 2,
+    height: 3,
   },
    {
     src: img3,
