@@ -15,7 +15,7 @@ import img13 from '../assets/images/gallery/img_13.png';
 export const photos = [
   {
     src: img1,
-    width: 5,
+    width: 3,
     height: 3,
   },
   {
@@ -25,32 +25,32 @@ export const photos = [
   },
    {
     src: img3,
-    width: 4,
+    width: 3,
     height: 3,
   },
   {
     src: img4,
-    width: 4,
+    width: 3,
     height: 3,
   },
    {
     src: img5,
-    width: 4,
+    width: 3,
     height: 3,
   },
   {
     src: img6,
-    width: 4,
+    width: 3,
     height: 3,
   },
   {
     src: img7,
-    width: 4,
+    width: 3,
     height: 3,
   },
   {
     src: img8,
-    width: 4,
+    width: 3,
     height: 3,
   },
 ];
