@@ -79,4 +79,9 @@ export const photos = [
     width: 5,
     height: 3,
   },
+  {
+    src: img14,
+    width: 5,
+    height: 3,
+  },
 ];
