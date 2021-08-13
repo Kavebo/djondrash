@@ -82,7 +82,7 @@ export const photos = [
   },
   {
     src: img14,
-    width: 4,
+    width: 3,
     height: 3,
   },
 ];
