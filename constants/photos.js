@@ -14,11 +14,7 @@ import img13 from '../assets/images/gallery/img_13.png';
 import img14 from '../assets/images/gallery/img_14.png';
 
 export const photos = [
-  {
-    src: img14,
-    width: 5,
-    height: 3,
-  },
+ 
   {
     src: img1,
     width: 5,
