@@ -93,4 +93,9 @@ export const photos = [
     width: 2,
     height: 3,
   },
+  {
+    src: img16,
+    width: 2,
+    height: 3,
+  },
 ];
