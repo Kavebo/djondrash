@@ -39,4 +39,14 @@ export default [
     name: 'Jägermeister Seznamovák 2021',
     place: 'Pasohlávky',
   },
+  {
+    date: '07.09.2021',
+    name: 'Jägermeister Seznamovák 2021',
+    place: 'Máchovo Jezero',
+  },
+  {
+    date: '24.09.2021',
+    name: 'Narozeniny Porsche',
+    place: 'Praha',
+  },
 ];
