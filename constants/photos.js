@@ -90,12 +90,7 @@ export const photos = [
   },
   {
     src: img15,
-    width: 5,
-    height: 3,
-  },
-  {
-    src: img16,
-    width: 5,
+    width: 2,
     height: 3,
   },
 ];
