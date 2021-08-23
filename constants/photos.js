@@ -17,16 +17,7 @@ import img16 from '../assets/images/gallery/img_16.png';
 
 export const photos = [
  
-  {
-    src: img16,
-    width: 5,
-    height: 3,
-  },
-  {
-    src: img15,
-    width: 5,
-    height: 3,
-  },
+ 
   {
     src: img1,
     width: 5,
@@ -95,6 +86,16 @@ export const photos = [
   {
     src: img14,
     width: 2,
+    height: 3,
+  },
+  {
+    src: img15,
+    width: 5,
+    height: 3,
+  },
+  {
+    src: img16,
+    width: 5,
     height: 3,
   },
 ];
