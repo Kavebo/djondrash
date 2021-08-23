@@ -1,10 +1,12 @@
 import '../styles/globals.css';
 
-import Router from 'next/router';
+import Router, { useRouter } from 'next/router';
 import NProgress from 'nprogress';
+import { useEffect } from 'react';
 
-import { LanguageProvider } from '../languages';
 import GlobalStyle from '../constants/globalStyle';
+import { LanguageProvider } from '../languages';
+import { pageView } from '../utils/googleAnalytics';
 
 NProgress.configure({
   minimum: 0.3,
@@ -20,6 +22,23 @@ Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      pageView(url);
+    };
+    //When the component is mounted, subscribe to router changes
+    //and log those page views
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <LanguageProvider>
       <GlobalStyle />
