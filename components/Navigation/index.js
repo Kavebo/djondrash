@@ -43,6 +43,9 @@ const Navigation = () => {
           <Link href="/shows">
             <li>{t('shows')}</li>
           </Link>
+          <Link href="/courses">
+            <li>{t('courses')}</li>
+          </Link>
         </ul>
         <MenuIconWrapper>
           <Img src={menuIcon} onClick={handleOnMenuClick} height={50} />
