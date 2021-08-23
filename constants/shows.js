@@ -35,6 +35,11 @@ export default [
     place: 'Praha',
   },
   {
+    date: '26.08.2021',
+    name: 'Radlická žije',
+    place: 'Radlická Kulturní Sportovna/Praha',
+  },
+  {
     date: '31.08.2021',
     name: 'Jägermeister Seznamovák 2021',
     place: 'Pasohlávky',
