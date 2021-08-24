@@ -50,8 +50,9 @@ const ItemWrapper = styled.div`
   justify-content: space-around;
   align-items: center;
   margin: auto;
-  max-width: 70%;
+  max-width: 50%;
   text-align: center;
+  white-space: pre-line;
 
   @media only screen and (min-width: 666px) {
     :nth-of-type(1n) {
