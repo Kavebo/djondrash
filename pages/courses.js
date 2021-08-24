@@ -157,7 +157,7 @@ const Courses = () => {
           <ItemWrapper index={index}>
             <Icon src={icon} />
             <ItemText>
-              {t(text)}{' '}
+              {t(text)}
               {text === 'courses_mail' && <ItemMail href="mailto: djondrash@gmail.com">djondrash@gmail.com</ItemMail>}
             </ItemText>
           </ItemWrapper>
