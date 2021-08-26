@@ -1,4 +1,4 @@
-export default [
+const shows = [
   {
     date: '27.06.2021',
     name: 'RedBull Pit Stop Challenge Live',
@@ -55,3 +55,5 @@ export default [
     place: 'Praha',
   },
 ];
+
+export default shows;

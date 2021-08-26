@@ -2,6 +2,7 @@ import '../styles/globals.css';
 
 import Router, { useRouter } from 'next/router';
 import NProgress from 'nprogress';
+import type { AppProps } from 'next/app';
 import { useEffect } from 'react';
 
 import GlobalStyle from '../constants/globalStyle';
@@ -21,11 +22,11 @@ Router.events.on('routeChangeStart', () => {
 Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   useEffect(() => {
-    const handleRouteChange = (url) => {
+    const handleRouteChange = (url: string) => {
       pageView(url);
     };
     //When the component is mounted, subscribe to router changes

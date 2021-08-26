@@ -8,7 +8,7 @@ import press7 from '../assets/images/press/7.png';
 import press8 from '../assets/images/press/8.png';
 import press9 from '../assets/images/press/9.png';
 
-export default [
+const press = [
   {
     link: 'https://blog.vemzu.cz/vemzu-x-puma-playground-aneb-jak-stihnout-vernisaz-kerku-a-party-za-1-noc/',
     image: press1,
@@ -46,3 +46,5 @@ export default [
     image: press9,
   },
 ];
+
+export default press;

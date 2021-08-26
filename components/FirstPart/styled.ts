@@ -65,7 +65,7 @@ export const InfoWrapper = styled.div`
   }
 `;
 
-export const Column = styled.div`
+export const Column = styled.div<{ $isPortraitMode?: boolean }>`
   display: block;
   flex: 1;
   margin-left: 5%;
@@ -98,7 +98,7 @@ export const TextInOneRow = styled.div`
   flex: 1;
 `;
 
-export const Text = styled.p`
+export const Text = styled.p<{ $hideInMobile?: boolean }>`
   color: #eadcca;
   text-align: justify;
   margin: 0;

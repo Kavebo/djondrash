@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { event } from './googleAnalytics';
 
-const useHandleGoogleEvent = (eventName) => {
+const useHandleGoogleEvent = (eventName: string) => {
   const [item, setItem] = useState({});
   const [name, setName] = useState('');
 

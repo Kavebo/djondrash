@@ -12,7 +12,7 @@ const CardWrapper = styled.div`
   }
 `;
 
-const Card = ({ children }) => {
+const Card: React.FC = ({ children }) => {
   return <CardWrapper>{children}</CardWrapper>;
 };
 

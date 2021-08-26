@@ -24,22 +24,22 @@ const FirstPart = () => {
   const BodyPortrait = () => (
     <MainColumn>
       <h1 style={{ display: 'none' }}>DJ Ondrash</h1>
-      <Column $isPortraitMode={true}>
+      <Column $isPortraitMode>
         <TextInOneRow>
           <Text>{t('hey1')}</Text>
           <Text>{t('hey2')}</Text>
         </TextInOneRow>
       </Column>
-      <Column $isPortraitMode={true}>
+      <Column $isPortraitMode>
         <Text>{t('about1')}</Text>
       </Column>
-      <Column $isPortraitMode={true}>
+      <Column $isPortraitMode>
         <Text>{t('about2')}</Text>
       </Column>
-      <Column $isPortraitMode={true}>
+      <Column $isPortraitMode>
         <Text>{t('about3')}</Text>
       </Column>
-      <Column $isPortraitMode={true}>
+      <Column $isPortraitMode>
         <Text>{t('about4')}</Text>
       </Column>
       <Column>
