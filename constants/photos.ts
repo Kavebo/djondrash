@@ -1,23 +1,22 @@
-import img1 from '../assets/images/gallery/img_1.png';
-import img2 from '../assets/images/gallery/img_2.png';
-import img3 from '../assets/images/gallery/img_3.png';
-import img4 from '../assets/images/gallery/img_4.png';
-import img5 from '../assets/images/gallery/img_5.png';
-import img6 from '../assets/images/gallery/img_6.png';
-import img7 from '../assets/images/gallery/img_7.png';
-import img8 from '../assets/images/gallery/img_8.png';
-import img9 from '../assets/images/gallery/img_9.png';
-import img10 from '../assets/images/gallery/img_10.png';
-import img11 from '../assets/images/gallery/img_11.png';
-import img12 from '../assets/images/gallery/img_12.png';
-import img13 from '../assets/images/gallery/img_13.png';
-import img14 from '../assets/images/gallery/img_14.png';
-import img15 from '../assets/images/gallery/img_15.png';
-import img16 from '../assets/images/gallery/img_16.png';
-import img17 from '../assets/images/gallery/img_17.png';
+import img1 from '../assets/images/gallery/img_1.jpg';
+import img2 from '../assets/images/gallery/img_2.jpg';
+import img3 from '../assets/images/gallery/img_3.jpg';
+import img4 from '../assets/images/gallery/img_4.jpg';
+import img5 from '../assets/images/gallery/img_5.jpg';
+import img6 from '../assets/images/gallery/img_6.jpg';
+import img7 from '../assets/images/gallery/img_7.jpg';
+import img8 from '../assets/images/gallery/img_8.jpg';
+import img9 from '../assets/images/gallery/img_9.jpg';
+import img10 from '../assets/images/gallery/img_10.jpg';
+import img11 from '../assets/images/gallery/img_11.jpg';
+import img12 from '../assets/images/gallery/img_12.jpg';
+import img13 from '../assets/images/gallery/img_13.jpg';
+import img14 from '../assets/images/gallery/img_14.jpg';
+import img15 from '../assets/images/gallery/img_15.jpg';
+import img16 from '../assets/images/gallery/img_16.jpg';
+import img17 from '../assets/images/gallery/img_17.jpg';
 
 export const photos = [
- 
   {
     src: img17,
     width: 5,
@@ -33,7 +32,7 @@ export const photos = [
     width: 5,
     height: 3,
   },
-   {
+  {
     src: img3,
     width: 5,
     height: 3,
@@ -43,7 +42,7 @@ export const photos = [
     width: 5,
     height: 3,
   },
-   {
+  {
     src: img5,
     width: 5,
     height: 3,

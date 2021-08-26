@@ -16,7 +16,6 @@ import {
   SignatureWrapper,
   SocialIconWrapper,
   Wrapper,
-  BackgroundImage,
 } from './styled';
 
 const ThirdPart = () => {

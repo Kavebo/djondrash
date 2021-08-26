@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out",
+    "tsc:check": "tsc --noEmit --project tsconfig.json"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.4",
@@ -31,8 +32,14 @@
     "css-loader": "^5.0.1",
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.0",
+    "husky": "4.2.5",
     "prettier": "^2.1.2",
     "style-loader": "^2.0.0",
     "typescript": "^4.3.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run tsc:check"
+    }
   }
 }

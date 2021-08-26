@@ -59,7 +59,7 @@ export const Img = styled.img`
   }}
 `;
 
-export const NavBarWrapper = styled.div`
+export const NavBarWrapper = styled.div<{ $showNavbar?: boolean }>`
   width: 100%;
   max-width: 100vw;
   background: rgba(0, 0, 0, 0.9);

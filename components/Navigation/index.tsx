@@ -18,7 +18,7 @@ import {
 } from './styled';
 
 const Navigation = () => {
-  const [locale, setLocale] = useContext(LanguageContext);
+  const { locale, setLocale } = useContext(LanguageContext);
   const { t } = useTranslation();
   const [showNavbar, setShowNavbar] = useState(false);
 
@@ -34,16 +34,16 @@ const Navigation = () => {
     <Wrapper>
       <NavBarWrapper $showNavbar={showNavbar}>
         <ul>
-          <Link href="/pictures">
+          <Link href="/pictures" passHref>
             <li>{t('pictures')}</li>
           </Link>
-          <Link href="/press">
+          <Link href="/press" passHref>
             <li>{t('press')}</li>
           </Link>
-          <Link href="/shows">
+          <Link href="/shows" passHref>
             <li>{t('shows')}</li>
           </Link>
-          <Link href="/courses">
+          <Link href="/courses" passHref>
             <li>{t('courses')}</li>
           </Link>
         </ul>
@@ -55,7 +55,7 @@ const Navigation = () => {
       <MenuIconsWrapper>
         <LeftSide>
           <ImageWrapper>
-            <Link href="/">
+            <Link href="/" passHref>
               <Img src={homeIcon} width={50} height={50} />
             </Link>
           </ImageWrapper>

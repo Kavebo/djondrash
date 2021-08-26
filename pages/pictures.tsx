@@ -62,7 +62,7 @@ const Pictures = () => {
           <Modal onClose={closeLightbox}>
             <Carousel
               currentIndex={currentImage}
-              views={photos.map((x) => ({
+              views={photos.map((x: any) => ({
                 ...x,
                 srcset: x.srcSet,
                 caption: x.title,

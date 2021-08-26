@@ -154,7 +154,7 @@ const Courses = () => {
 
       <ContentWrapper>
         {courseData.map(({ text, icon }, index) => (
-          <ItemWrapper index={index}>
+          <ItemWrapper key={index}>
             <Icon src={icon} />
             <ItemText>
               {t(text)}
