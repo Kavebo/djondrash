@@ -45,6 +45,11 @@ const shows = [
     place: 'Pasohlávky',
   },
   {
+    date: '01.09.2021',
+    name: 'Jägermeister Seznamovák 2021',
+    place: 'Máchovo jezero',
+  },
+  {
     date: '07.09.2021',
     name: 'Jägermeister Seznamovák 2021',
     place: 'Máchovo Jezero',
