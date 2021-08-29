@@ -52,7 +52,7 @@ const shows = [
   {
     date: '07.09.2021',
     name: 'Jägermeister Seznamovák 2021',
-    place: 'Máchovo Jezero',
+    place: 'Máchovo jezero',
   },
   {
     date: '24.09.2021',
