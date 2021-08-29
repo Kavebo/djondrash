@@ -50,16 +50,6 @@ export const photos = [
     height: 3,
   },
   {
-    src: img19,
-    width: 4,
-    height: 3,
-  },
-  {
-    src: img18,
-    width: 5,
-    height: 3,
-  },
-  {
     src: img15,
     width: 2,
     height: 3,
