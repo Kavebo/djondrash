@@ -1,11 +1,16 @@
-import React from 'react';
 import Head from 'next/head';
+import React, { useState } from 'react';
 
 import FirstPart from '../components/FirstPart';
+import Modal from '../components/Modal';
 import SecondPart from '../components/SecondPart';
+import Subscription from '../components/Subscription';
 import ThirdPart from '../components/ThirdPart';
 
 const Home = () => {
+  const [showModal, setShowModal] = useState(true);
+  // TODO: make here cookie function to show modal
+
   return (
     <>
       <Head>
@@ -17,6 +22,9 @@ const Home = () => {
       <FirstPart />
       <SecondPart />
       <ThirdPart />
+      <Modal onClose={() => setShowModal(false)} show={showModal}>
+        <Subscription />
+      </Modal>
     </>
   );
 };
