@@ -1,4 +1,4 @@
-import { addDoc, collection, doc, getDocs } from '@firebase/firestore';
+import { addDoc, collection, doc, getDocs, deleteDoc } from '@firebase/firestore';
 import { db } from './firebase';
 
 export const getUsers = async () => {
@@ -23,4 +23,10 @@ export const postUser = async (email: string) => {
   await addDoc(usersCol, { email });
 
   return userList.push({ email });
+};
+
+export const deleteUser = async (userId: string) => {
+  const usersCol = collection(db, 'users');
+
+  await deleteDoc(doc(usersCol, userId));
 };

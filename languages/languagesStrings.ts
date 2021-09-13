@@ -26,6 +26,11 @@ export const languagesStrings = {
     courses_time: 'Délka lekce 90 minut',
     courses_date: 'Datum i čas si zvolíš podle sebe',
     courses_topic: 'Témata a okruhy, které tě zajímají',
+    unsubscribe_label: 'Je mi líto, že se musíme rozloučit',
+    subscription_button: 'Odobírat',
+    subscription_label: 'Chcete vědet o všech akcích na kterých budu hrát?',
+    subscription_label2: 'Zadej email a klikni Odebírat',
+    subscription_invalid_email: 'Neplatný email',
   },
   en: {
     hey1: 'Hey! ',
@@ -54,5 +59,10 @@ export const languagesStrings = {
     courses_time: 'Lecture length 90 minutes',
     courses_date: 'Date and time under your choice',
     courses_topic: 'Themes and topics that interest you',
+    unsubscribe_label: 'I`m sorry to say goodbye',
+    subscription_button: 'Subscribe',
+    subscription_label: "Wants to know about all actions where I'll play?",
+    subscription_label2: 'Enter email and click Subscribe',
+    subscription_invalid_email: 'Invalid email address',
   },
 };

@@ -11,6 +11,7 @@ interface IModalProps {
 
 const Modal: React.FC<IModalProps> = ({ show, onClose, children, title }) => {
   const [isBrowser, setIsBrowser] = useState(false);
+  const [isFocused, setIsFocused] = useState(false);
 
   useEffect(() => {
     setIsBrowser(true);
@@ -21,9 +22,13 @@ const Modal: React.FC<IModalProps> = ({ show, onClose, children, title }) => {
     onClose();
   };
 
+  const handleOverlayClick = () => {
+    if (!isFocused) onClose();
+  };
+
   const modalContent = show ? (
-    <StyledModalOverlay>
-      <StyledModal>
+    <StyledModalOverlay onClickCapture={handleOverlayClick}>
+      <StyledModal onMouseEnter={() => setIsFocused(true)} onMouseLeave={() => setIsFocused(false)}>
         <StyledModalHeader>
           <a href="#" onClick={handleCloseClick}>
             x

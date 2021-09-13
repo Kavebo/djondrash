@@ -23,7 +23,7 @@ const Home = () => {
       <SecondPart />
       <ThirdPart />
       <Modal onClose={() => setShowModal(false)} show={showModal}>
-        <Subscription />
+        <Subscription closeModal={() => setShowModal(false)} />
       </Modal>
     </>
   );
