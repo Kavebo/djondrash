@@ -69,6 +69,11 @@ const shows = [
     name: 'Narozeniny Porsche',
     place: 'Praha',
   },
+  {
+    date: '30.09.2021',
+    name: 'Radlická žije',
+    place: 'Radlická Kulturní Sportovna/Praha',
+  },
 ];
 
 export default shows;
