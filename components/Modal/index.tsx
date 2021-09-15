@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
 import { ONE_MONTH_IN_DAYS, ONE_WEEK_IN_DAYS, SUBSCRIPTION_COOKIE } from '../../utils/constants';
 import { setCookie } from '../../utils/cookies';
 
@@ -47,7 +46,7 @@ const Modal: React.FC<IModalProps> = ({ show, onClose, children, title }) => {
   ) : null;
 
   if (isBrowser) {
-    return ReactDOM.createPortal(modalContent, document.getElementById('modal-root')!);
+    return modalContent;
   } else {
     return null;
   }
