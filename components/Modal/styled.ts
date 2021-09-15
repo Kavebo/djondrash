@@ -16,14 +16,15 @@ export const StyledModalHeader = styled.div`
 
 export const StyledModal = styled.div`
   position: fixed;
+  top: 20%;
   background-color: rgba(0, 0, 0, 0.8);
   color: #eadcca;
   width: 90%;
   height: 300px;
   border-radius: 15px;
   padding: 5px 15px;
-  /* animation-name: slideIn; */
-  /* animation-duration: 1s; */
+  animation-name: slideIn;
+  animation-duration: 1s;
 
   @media only screen and (min-width: 550px) {
     width: 60%;
