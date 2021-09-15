@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Label = styled.p`
-  margin: 0 10px;
+  margin: 0 10px 10px 0;
   text-align: center;
   font-size: 20px;
   color: white;
@@ -63,7 +63,7 @@ export const InputWrapper = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: auto;
+  margin: 5% auto;
 
   @media only screen and (min-width: 767px) {
     flex-direction: row;

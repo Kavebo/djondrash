@@ -36,15 +36,15 @@ const Subscription: React.FC<ISubscription> = ({ closeModal }) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <Label>{t('subscription_label')}</Label>
-      <LogoImageWrapper>
-        <Label2>{t('subscription_label2')}</Label2>
-        <img src={logo} alt="dj ondrash logo" width={80} height={40} />
-      </LogoImageWrapper>
       <InputWrapper>
         <EmailInput {...register('email', { required: true, validate: validateEmail })} placeholder="Email" />
         <SubscribeButton type="submit">{t('subscription_button')}</SubscribeButton>
         <ErrorMessage message={t('subscription_invalid_email')} errors={errors} name="email" />
       </InputWrapper>
+      <LogoImageWrapper>
+        {/* <Label2>{t('subscription_label2')}</Label2> */}
+        <img src={logo} alt="dj ondrash logo" width={120} height={60} />
+      </LogoImageWrapper>
     </form>
   );
 };
