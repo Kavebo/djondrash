@@ -53,7 +53,6 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
           <div id="modal-root"></div>
-          <div id="cookies-root"></div>
         </body>
       </Html>
     );
