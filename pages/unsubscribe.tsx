@@ -5,8 +5,11 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 
 import background from '../assets/images/background3_phone.jpg';
+import { initializeFirebase } from '../constants/firebase/firebase';
 import { deleteUser } from '../constants/firebase/users';
 import { useTranslation } from '../languages';
+
+initializeFirebase();
 
 const Wrapper = styled.div`
   background: url(${background});

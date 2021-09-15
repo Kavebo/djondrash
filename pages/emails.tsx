@@ -1,10 +1,11 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
 
 import background from '../assets/images/background3_phone.jpg';
 import Navigation from '../components/Navigation';
 import { getUsers } from '../constants/firebase/users';
+import FirebaseAuth from '../constants/firebase/FirebaseAuth';
 
 const Wrapper = styled.div`
   background: url(${background});
@@ -20,6 +21,7 @@ const Wrapper = styled.div`
 const ContentWrapper = styled.div`
   flex: 1;
   height: 100vh;
+  width: 100%;
   margin: auto;
   padding: 10px;
 
@@ -30,6 +32,7 @@ const ContentWrapper = styled.div`
 
 interface IUser {
   email: string;
+  id: string;
 }
 
 const Emails = () => {
@@ -39,15 +42,17 @@ const Emails = () => {
     getUsers().then((data) => setUsers(data as IUser[]));
   }, []);
 
-  console.log('[] users', users);
-
   return (
     <Wrapper>
       <Head>
         <title>Dj Ondrash - Email sender</title>
       </Head>
       <Navigation />
-      <ContentWrapper></ContentWrapper>
+      <ContentWrapper>
+        <FirebaseAuth>
+          <h1 style={{ color: 'white' }}>TODO: email sender</h1>
+        </FirebaseAuth>
+      </ContentWrapper>
     </Wrapper>
   );
 };

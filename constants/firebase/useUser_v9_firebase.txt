@@ -1,0 +1,55 @@
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import 'firebase/auth';
+import { removeUserCookie, setUserCookie, getUserFromCookie } from './userCookies';
+import { GoogleAuthProvider, getAuth, onIdTokenChanged, User, signOut } from 'firebase/auth';
+
+const provider = new GoogleAuthProvider();
+provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+
+const useUser = () => {
+  const [user, setUser] = useState<User | null>(null);
+  const router = useRouter();
+  const auth = getAuth();
+
+  const logout = async () => {
+    signOut(auth)
+      .then(() => {
+        // Sign-out successful.
+        router.push('/');
+      })
+      .catch((e: any) => {
+        console.error(e);
+      });
+  };
+
+  useEffect(() => {
+    // Firebase updates the id token every hour, this
+    // makes sure the react state and the cookie are
+    // both kept up to date
+    const cancelAuthListener = onIdTokenChanged(auth, (user: any) => {
+      if (user) {
+        setUserCookie(user);
+        setUser(user);
+      } else {
+        removeUserCookie();
+        setUser(null);
+      }
+    });
+
+    const userFromCookie = getUserFromCookie();
+    if (!userFromCookie) {
+      router.push('/');
+      return;
+    }
+    setUser(userFromCookie);
+
+    return () => {
+      cancelAuthListener();
+    };
+  }, []);
+
+  return { user, logout };
+};
+
+export { useUser };

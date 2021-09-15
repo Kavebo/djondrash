@@ -6,6 +6,9 @@ import Modal from '../components/Modal';
 import SecondPart from '../components/SecondPart';
 import Subscription from '../components/Subscription';
 import ThirdPart from '../components/ThirdPart';
+import { initializeFirebase } from '../constants/firebase/firebase';
+
+initializeFirebase();
 
 const Home = () => {
   const [showModal, setShowModal] = useState(true);

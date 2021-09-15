@@ -1,32 +1,31 @@
-import { addDoc, collection, doc, getDocs, deleteDoc } from '@firebase/firestore';
-import { db } from './firebase';
+import firebase from 'firebase/app';
+import 'firebase/firestore';
 
 export const getUsers = async () => {
-  const usersCol = collection(db, 'users');
-  const usersSnapshot = await getDocs(usersCol);
-  const userList = usersSnapshot.docs.map((doc) => doc.data());
+  const docRef = await firebase.firestore().collection('users').get();
+  const userList = docRef.docs.map((item) => ({ ...item.data(), id: item.id }));
 
   return userList;
 };
 
 export const postUser = async (email: string) => {
-  const usersCol = collection(db, 'users');
-  const usersSnapshot = await getDocs(usersCol);
-  const userList = usersSnapshot.docs.map((doc) => doc.data());
+  const docRef = await firebase.firestore().collection('users').get();
+  const userList = docRef.docs.map((item: any) => item.data());
+  const userExists = userList.find((user: any) => user.email === email);
 
-  const userExists = userList.find((user) => user.email === email);
+  if (userExists) return;
 
-  if (userExists) {
-    return userList;
+  try {
+    firebase.firestore().collection('users').add({ email });
+  } catch (error) {
+    console.error(error);
   }
-
-  await addDoc(usersCol, { email });
-
-  return userList.push({ email });
 };
 
 export const deleteUser = async (userId: string) => {
-  const usersCol = collection(db, 'users');
-
-  await deleteDoc(doc(usersCol, userId));
+  try {
+    firebase.firestore().collection('users').doc(userId).delete();
+  } catch (error) {
+    console.error(error);
+  }
 };
