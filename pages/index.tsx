@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import FirstPart from '../components/FirstPart';
 import Modal from '../components/Modal';
@@ -7,12 +7,28 @@ import SecondPart from '../components/SecondPart';
 import Subscription from '../components/Subscription';
 import ThirdPart from '../components/ThirdPart';
 import { initializeFirebase } from '../constants/firebase/firebase';
+import { ONE_YEAR_IN_DAYS, SUBSCRIPTION_COOKIE } from '../utils/constants';
+import { getCookie, setCookie } from '../utils/cookies';
 
 initializeFirebase();
 
 const Home = () => {
-  const [showModal, setShowModal] = useState(true);
-  // TODO: make here cookie function to show modal
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    const bannerCookie = getCookie(SUBSCRIPTION_COOKIE);
+
+    setTimeout(() => {
+      if (bannerCookie === undefined) {
+        setShowModal(true);
+      }
+    }, 2000);
+  }, []);
+
+  const handleOnSubscribe = () => {
+    setCookie(SUBSCRIPTION_COOKIE, 'true', ONE_YEAR_IN_DAYS);
+    setShowModal(false);
+  };
 
   return (
     <>
@@ -26,7 +42,7 @@ const Home = () => {
       <SecondPart />
       <ThirdPart />
       <Modal onClose={() => setShowModal(false)} show={showModal}>
-        <Subscription closeModal={() => setShowModal(false)} />
+        <Subscription closeModal={handleOnSubscribe} />
       </Modal>
     </>
   );

@@ -31,6 +31,8 @@ export const languagesStrings = {
     subscription_label: 'Chcete vědet o všech akcích na kterých budu hrát?',
     subscription_label2: 'Zadej email a klikni Odebírat',
     subscription_invalid_email: 'Neplatný email',
+    cookies_text:
+      'Tyto webové stránky používají k poskytování svých služeb soubory Cookies. Používáním těchto webových stránek souhlasíte s použitím souborů Cookies.',
   },
   en: {
     hey1: 'Hey! ',
@@ -64,5 +66,7 @@ export const languagesStrings = {
     subscription_label: "Wants to know about all actions where I'll play?",
     subscription_label2: 'Enter email and click Subscribe',
     subscription_invalid_email: 'Invalid email address',
+    cookies_text:
+      'This website uses cookies to provide its services. By using this website, you agree to the use of cookies.',
   },
 };

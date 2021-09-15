@@ -3,11 +3,12 @@ import '../styles/globals.css';
 import Router, { useRouter } from 'next/router';
 import NProgress from 'nprogress';
 import type { AppProps } from 'next/app';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import GlobalStyle from '../constants/globalStyle';
 import { LanguageProvider } from '../languages';
 import { pageView } from '../utils/googleAnalytics';
+import CookieBanner from '../components/CookieBanner';
 
 NProgress.configure({
   minimum: 0.3,
@@ -44,6 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <LanguageProvider>
       <GlobalStyle />
       <Component {...pageProps} />
+      <CookieBanner />
     </LanguageProvider>
   );
 }

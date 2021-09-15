@@ -15,12 +15,29 @@ export const StyledModalHeader = styled.div`
 `;
 
 export const StyledModal = styled.div`
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
   color: #eadcca;
-  width: 500px;
+  width: 90%;
   height: 300px;
   border-radius: 15px;
-  padding: 15px;
+  padding: 5px 15px;
+  animation-name: slideIn;
+  animation-duration: 1s;
+
+  @media only screen and (min-width: 550px) {
+    width: 60%;
+  }
+
+  @keyframes slideIn {
+    from {
+      margin-top: -100%;
+    }
+
+    to {
+      margin-top: 0%;
+    }
+  }
 `;
 export const StyledModalOverlay = styled.div`
   position: absolute;

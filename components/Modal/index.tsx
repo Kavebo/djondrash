@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
+import { ONE_MONTH_IN_DAYS, ONE_WEEK_IN_DAYS, SUBSCRIPTION_COOKIE } from '../../utils/constants';
+import { setCookie } from '../../utils/cookies';
 
 import { StyledModal, StyledModalBody, StyledModalHeader, StyledModalOverlay, StyledModalTitle } from './styled';
 
@@ -19,10 +21,14 @@ const Modal: React.FC<IModalProps> = ({ show, onClose, children, title }) => {
 
   const handleCloseClick = (e: any) => {
     e.preventDefault();
+    setCookie(SUBSCRIPTION_COOKIE, 'false', ONE_MONTH_IN_DAYS);
+
     onClose();
   };
 
   const handleOverlayClick = () => {
+    setCookie(SUBSCRIPTION_COOKIE, 'false', ONE_WEEK_IN_DAYS);
+
     if (!isFocused) onClose();
   };
 
