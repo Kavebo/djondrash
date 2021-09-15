@@ -22,8 +22,8 @@ export const StyledModal = styled.div`
   height: 300px;
   border-radius: 15px;
   padding: 5px 15px;
-  animation-name: slideIn;
-  animation-duration: 1s;
+  /* animation-name: slideIn; */
+  /* animation-duration: 1s; */
 
   @media only screen and (min-width: 550px) {
     width: 60%;
