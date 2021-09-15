@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const FormWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
 export const Label = styled.p`
   margin: 0 10px 10px 0;
   text-align: center;
