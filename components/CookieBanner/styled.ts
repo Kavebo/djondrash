@@ -6,7 +6,7 @@ export const BannerWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   min-height: 30px;
   background-color: rgb(0, 0, 0, 0.8);
   text-align: center;
