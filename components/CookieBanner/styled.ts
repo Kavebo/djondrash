@@ -14,6 +14,10 @@ export const BannerWrapper = styled.div`
   animation-name: slideIn;
   animation-duration: 1s;
 
+  @media only screen and (min-width: 550px) {
+    max-height: 70px;
+  }
+
   @keyframes slideIn {
     from {
       margin-bottom: -100%;

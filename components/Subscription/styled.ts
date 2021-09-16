@@ -69,7 +69,7 @@ export const InputWrapper = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 5% auto;
+  margin: 5% auto 2% auto;
 
   @media only screen and (min-width: 767px) {
     flex-direction: row;
