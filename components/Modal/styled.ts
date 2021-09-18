@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledModalBody = styled.div`
-  padding-top: 10px;
-`;
+export const StyledModalBody = styled.div``;
 
 export const StyledModalTitle = styled.h1`
   text-align: center;
