@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
 import { makeStyles } from '@material-ui/core/styles';
@@ -14,6 +14,10 @@ import { useTranslation } from '../languages';
 import background from '../assets/images/background3_phone.jpg';
 import Navigation from '../components/Navigation';
 import tableData from '../constants/shows';
+import Modal from '../components/Modal';
+import Subscription from '../components/Subscription';
+import { getCookie, setCookie } from '../utils/cookies';
+import { SUBSCRIPTION_COOKIE, ONE_YEAR_IN_DAYS } from '../utils/constants';
 
 const Wrapper = styled.div`
   background: url(${background});
@@ -49,6 +53,22 @@ const useStyles = makeStyles({
 const Shows = () => {
   const classes = useStyles();
   const { t } = useTranslation();
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    const bannerCookie = getCookie(SUBSCRIPTION_COOKIE);
+
+    setTimeout(() => {
+      if (bannerCookie === undefined) {
+        setShowModal(true);
+      }
+    }, 2000);
+  }, []);
+
+  const handleOnSubscribe = () => {
+    setCookie(SUBSCRIPTION_COOKIE, 'true', ONE_YEAR_IN_DAYS);
+    setShowModal(false);
+  };
 
   return (
     <Wrapper>
@@ -83,6 +103,9 @@ const Shows = () => {
           </Table>
         </TableContainer>
       </GalleryWrapper>
+      <Modal onClose={() => setShowModal(false)} show={showModal}>
+        <Subscription closeModal={handleOnSubscribe} />
+      </Modal>
     </Wrapper>
   );
 };

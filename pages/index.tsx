@@ -1,9 +1,12 @@
-import React from 'react';
 import Head from 'next/head';
+import React from 'react';
 
 import FirstPart from '../components/FirstPart';
 import SecondPart from '../components/SecondPart';
 import ThirdPart from '../components/ThirdPart';
+import { initializeFirebase } from '../constants/firebase/firebase';
+
+initializeFirebase();
 
 const Home = () => {
   return (

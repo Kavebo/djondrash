@@ -4,5 +4,7 @@
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
-  }
+  },
+  "cSpell.words": ["sendgrid"],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
