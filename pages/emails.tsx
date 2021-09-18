@@ -6,6 +6,7 @@ import background from '../assets/images/background3_phone.jpg';
 import Navigation from '../components/Navigation';
 import { getUsers } from '../constants/firebase/users';
 import FirebaseAuth from '../constants/firebase/FirebaseAuth';
+import MailSender from '../components/MailSender';
 
 const Wrapper = styled.div`
   background: url(${background});
@@ -30,7 +31,7 @@ const ContentWrapper = styled.div`
   }
 `;
 
-interface IUser {
+export interface IUser {
   email: string;
   id: string;
 }
@@ -50,7 +51,8 @@ const Emails = () => {
       <Navigation />
       <ContentWrapper>
         <FirebaseAuth>
-          <h1 style={{ color: 'white' }}>TODO: email sender</h1>
+          <h1>Email sender</h1>
+          <MailSender users={users} />
         </FirebaseAuth>
       </ContentWrapper>
     </Wrapper>

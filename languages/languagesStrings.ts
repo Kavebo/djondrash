@@ -63,7 +63,7 @@ export const languagesStrings = {
     courses_topic: 'Themes and topics that interest you',
     unsubscribe_label: 'I`m sorry to say goodbye',
     subscription_button: 'Subscribe',
-    subscription_label: "Wants to know about all actions where I'll play?",
+    subscription_label: "Wants to know about all shows where I'll play?",
     subscription_label2: 'Enter email and click Subscribe',
     subscription_invalid_email: 'Invalid email address',
     cookies_text:
