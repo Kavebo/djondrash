@@ -28,7 +28,7 @@ export const languagesStrings = {
     courses_topic: 'Témata a okruhy, které tě zajímají',
     unsubscribe_label: 'Je mi líto, že se musíme rozloučit',
     subscription_button: 'Odobírat',
-    subscription_label: 'Chcete vědet o všech akcích na kterých budu hrát?',
+    subscription_label: 'Chcete vědet o všech novinkách a akcích?',
     subscription_label2: 'Zadej email a klikni Odebírat',
     subscription_invalid_email: 'Neplatný email',
     cookies_text:
@@ -63,7 +63,7 @@ export const languagesStrings = {
     courses_topic: 'Themes and topics that interest you',
     unsubscribe_label: 'I`m sorry to say goodbye',
     subscription_button: 'Subscribe',
-    subscription_label: "Wants to know about all shows where I'll play?",
+    subscription_label: 'Do you want to know about all news and events?',
     subscription_label2: 'Enter email and click Subscribe',
     subscription_invalid_email: 'Invalid email address',
     cookies_text:

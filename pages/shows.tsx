@@ -53,22 +53,6 @@ const useStyles = makeStyles({
 const Shows = () => {
   const classes = useStyles();
   const { t } = useTranslation();
-  const [showModal, setShowModal] = useState(false);
-
-  useEffect(() => {
-    const bannerCookie = getCookie(SUBSCRIPTION_COOKIE);
-
-    setTimeout(() => {
-      if (bannerCookie === undefined) {
-        setShowModal(true);
-      }
-    }, 2000);
-  }, []);
-
-  const handleOnSubscribe = () => {
-    setCookie(SUBSCRIPTION_COOKIE, 'true', ONE_YEAR_IN_DAYS);
-    setShowModal(false);
-  };
 
   return (
     <Wrapper>
@@ -103,9 +87,6 @@ const Shows = () => {
           </Table>
         </TableContainer>
       </GalleryWrapper>
-      <Modal onClose={() => setShowModal(false)} show={showModal}>
-        <Subscription closeModal={handleOnSubscribe} />
-      </Modal>
     </Wrapper>
   );
 };
