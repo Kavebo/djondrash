@@ -19,24 +19,32 @@ const MailSender: React.FC<IMailSender> = ({ users }) => {
   const [htmlTemplate, setHtmlTemplate] = useState(exampleTemplate);
   const textAreaRef = useRef<HTMLTextAreaElement>();
 
-  console.log('[MailSender] users', users);
-
   const handleOnTextAreaChange = () => {
     setHtmlTemplate(textAreaRef.current?.value || '');
   };
 
   const handleOnSubmit = (data: IMailFormData) => {
-    const htmlText = htmlTemplate.replace('</body>', `${unsubscribePart.replace(REPLACE_USER_ID, data.email)}</body>`);
+    users.forEach((user) => {
+      const htmlText = htmlTemplate.replace('</body>', `${unsubscribePart.replace(REPLACE_USER_ID, user.id)}</body>`);
 
-    fetch('/api/mail', { method: 'post', body: JSON.stringify({ ...data, htmlTemplate: htmlText }) });
+      fetch('/api/mail', {
+        method: 'post',
+        body: JSON.stringify({ ...data, htmlTemplate: htmlText, email: user.email }),
+      });
+    });
   };
 
   return (
     <div>
       <form method="post" onSubmit={handleSubmit(handleOnSubmit)}>
-        <input {...register('email', { required: true })} placeholder="email" />
-        <input {...register('subject', { required: true })} placeholder="subject" />
-        <button type="submit">Odoslat</button>
+        <input
+          {...register('subject', { required: true })}
+          style={{ width: 300, fontSize: 20 }}
+          placeholder="Email subject"
+        />
+        <button type="submit" style={{ fontSize: 20, margin: 5, background: '#eadcaa' }}>
+          Send
+        </button>
       </form>
       <Row>
         <h2>Text Area</h2>
