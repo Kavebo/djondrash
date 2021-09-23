@@ -494,9 +494,9 @@ export const exampleTemplate = `
 `;
 
 export const unsubscribePart = `
-<div style="position:fixed;bottom:0;text-align:center;margin:auto;width:100%;background:lightgray">
+<div style="position:relative;bottom:0;text-align:center;margin:auto;width:100%;color:lightgray;font-size:10px">
 <p><a target="_blank"></a>No longer want to receive these emails?&nbsp;<a href="http://localhost:3000/unsubscribe?userId=REPLACE_USER_ID"
-target="_blank">Unsubscribe</a>.<a target="_blank"></a></p>
+target="_blank" style="color:lightgray;font-size:10px">Unsubscribe</a>.<a target="_blank"></a></p>
 </div>
 `;
 

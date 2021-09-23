@@ -12,8 +12,13 @@
     "tsc:check": "tsc --noEmit --project tsconfig.json"
   },
   "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
     "@hookform/error-message": "^2.0.0",
     "@material-ui/core": "^4.11.4",
+    "@mui/icons-material": "^5.0.1",
+    "@mui/material": "^5.0.1",
+    "@mui/styled-engine-sc": "^5.0.0",
     "@sendgrid/mail": "^7.4.6",
     "firebase": "^8.10.0",
     "firebase-admin": "^8.13.0",

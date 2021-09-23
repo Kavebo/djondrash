@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import Head from 'next/head';
+import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -8,16 +6,14 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
+import Head from 'next/head';
+import React from 'react';
+import styled from 'styled-components';
 
-import { useTranslation } from '../languages';
 import background from '../assets/images/background3_phone.jpg';
 import Navigation from '../components/Navigation';
 import tableData from '../constants/shows';
-import Modal from '../components/Modal';
-import Subscription from '../components/Subscription';
-import { getCookie, setCookie } from '../utils/cookies';
-import { SUBSCRIPTION_COOKIE, ONE_YEAR_IN_DAYS } from '../utils/constants';
+import { useTranslation } from '../languages';
 
 const Wrapper = styled.div`
   background: url(${background});

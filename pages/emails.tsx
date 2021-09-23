@@ -7,6 +7,7 @@ import Navigation from '../components/Navigation';
 import { getUsers } from '../constants/firebase/users';
 import FirebaseAuth from '../constants/firebase/FirebaseAuth';
 import MailSender from '../components/MailSender';
+import EmailMultiSelect from '../components/MultiSelect';
 
 const Wrapper = styled.div`
   background: url(${background});
@@ -38,9 +39,13 @@ export interface IUser {
 
 const Emails = () => {
   const [users, setUsers] = useState<IUser[]>([]);
+  const [filteredUsers, setFilteredUsers] = useState<IUser[]>([]);
 
   useEffect(() => {
-    getUsers().then((data) => setUsers(data as IUser[]));
+    getUsers().then((data) => {
+      setUsers(data as IUser[]);
+      setFilteredUsers(data as IUser[]);
+    });
   }, []);
 
   return (
@@ -52,7 +57,8 @@ const Emails = () => {
       <ContentWrapper>
         <FirebaseAuth>
           <h1>Email sender</h1>
-          <MailSender users={users} />
+          {users.length > 0 && <EmailMultiSelect users={users} setUsers={setFilteredUsers} />}
+          <MailSender users={filteredUsers} />
         </FirebaseAuth>
       </ContentWrapper>
     </Wrapper>
