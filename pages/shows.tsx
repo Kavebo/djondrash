@@ -8,6 +8,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Head from 'next/head';
 import React from 'react';
+import { useMemo } from 'react';
 import styled from 'styled-components';
 
 import background from '../assets/images/background3_phone.jpg';
@@ -50,6 +51,10 @@ const Shows = () => {
   const classes = useStyles();
   const { t } = useTranslation();
 
+  const showData = useMemo(() => {
+    return tableData.reverse();
+  }, [tableData]);
+
   return (
     <Wrapper>
       <Head>
@@ -70,7 +75,7 @@ const Shows = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {tableData.map((row) => (
+              {showData.map((row) => (
                 <TableRow key={row.name}>
                   <TableCell className={classes.cell} component="th" scope="row">
                     {row.date}
