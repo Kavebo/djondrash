@@ -9,7 +9,7 @@ const mail = async (req: NextApiRequest, res: NextApiResponse) => {
 
   const data: MailDataRequired = {
     to: email,
-    from: 'djondrash@gmail.com',
+    from: 'info@djondrash.com',
     subject,
     html: htmlTemplate,
   };
