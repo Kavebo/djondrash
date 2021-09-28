@@ -11,6 +11,7 @@ export const TextArea = styled.textarea`
 `;
 
 export const TemplateWrapper = styled.div`
+  background: white;
   display: flex;
   height: 100vh;
 `;

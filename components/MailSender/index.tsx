@@ -25,7 +25,12 @@ const MailSender: React.FC<IMailSender> = ({ users }) => {
 
   const handleOnSubmit = (data: IMailFormData) => {
     users.forEach((user) => {
-      const htmlText = htmlTemplate.replace('</body>', `${unsubscribePart.replace(REPLACE_USER_ID, user.id)}</body>`);
+      let htmlText;
+      if (htmlTemplate.includes('</body>')) {
+        htmlText = htmlTemplate.replace('</body>', `${unsubscribePart.replace(REPLACE_USER_ID, user.id)}</body>`);
+      } else {
+        htmlText = `${htmlTemplate}<br>${unsubscribePart.replace(REPLACE_USER_ID, user.id)}`;
+      }
 
       fetch('/api/mail', {
         method: 'post',
