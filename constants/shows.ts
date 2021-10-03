@@ -74,6 +74,26 @@ const shows = [
     name: 'Radlická žije',
     place: 'Radlická Kulturní Sportovna/Praha',
   },
+  {
+    date: '15.10.2021',
+    name: 'Signal festival 2021',
+    place: 'Praha',
+  },
+  {
+    date: '16.10.2021',
+    name: 'Signal festival 2021',
+    place: 'Praha',
+  },
+  {
+    date: '22.10.2021',
+    name: 'MOLLY',
+    place: 'Karlovy Vary',
+  },
+  {
+    date: '29.10.2021',
+    name: 'MOLLY',
+    place: 'Karlovy Vary',
+  },
 ];
 
 export default shows;
