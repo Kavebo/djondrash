@@ -4,6 +4,7 @@ import React, { useContext, useState } from 'react';
 import languageIcon from '../../assets/images/CZ-EN_button.svg';
 import homeIcon from '../../assets/images/HOME_button.svg';
 import menuIcon from '../../assets/images/MENU_button.svg';
+import twitterIcon from '../../assets/images/twitter_icon.png';
 import { useTranslation } from '../../languages';
 import { LanguageContext, locales } from '../../languages/LanguageProvider';
 import {
@@ -64,7 +65,14 @@ const Navigation = () => {
           </ImageWrapper>
         </LeftSide>
         <RightSide>
-          <Img src={menuIcon} onClick={handleOnMenuClick} width={50} height={50} />
+          <ImageWrapper>
+            <Link href="https://twitter.com/djondrash" passHref>
+              <Img src={twitterIcon} style={{ padding: 10 }} />
+            </Link>
+          </ImageWrapper>
+          <ImageWrapper>
+            <Img src={menuIcon} onClick={handleOnMenuClick} />
+          </ImageWrapper>
         </RightSide>
       </MenuIconsWrapper>
     </Wrapper>

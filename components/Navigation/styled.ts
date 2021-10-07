@@ -22,8 +22,7 @@ export const LeftSide = styled.div`
 `;
 
 export const RightSide = styled.div`
-  margin-right: 5%;
-  width: 50px;
+  display: flex;
 `;
 
 export const Img = styled.img`
@@ -115,4 +114,24 @@ export const MenuIconWrapper = styled.div`
 
 export const ImageWrapper = styled.div`
   width: 70px;
+
+  animation: drop-down 1s cubic-bezier(0.2, -2, 0.8, 2), show 1s ease-in;
+
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes drop-down {
+    from {
+      transform: translateY(-70px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
 `;
