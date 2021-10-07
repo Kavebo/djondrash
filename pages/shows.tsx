@@ -29,6 +29,8 @@ const Wrapper = styled.div`
 `;
 
 const GalleryWrapper = styled.div`
+  overflow: scroll;
+  max-width: 100%;
   flex: 1;
   height: 100vh;
   margin: auto;
