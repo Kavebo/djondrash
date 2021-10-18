@@ -90,6 +90,11 @@ const shows = [
     place: 'Karlovy Vary',
   },
   {
+    date: '26.10.2021',
+    name: 'CZU HALLOwEEN PARTY',
+    place: 'Praha',
+  },
+  {
     date: '29.10.2021',
     name: 'MOLLY',
     place: 'Karlovy Vary',
