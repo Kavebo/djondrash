@@ -91,7 +91,7 @@ const shows = [
   },
   {
     date: '26.10.2021',
-    name: 'CZU HALLOwEEN PARTY',
+    name: 'ČZU HALLOWEEN PARTY',
     place: 'Praha',
   },
   {
