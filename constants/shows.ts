@@ -104,6 +104,11 @@ const shows = [
     name: 'Varna',
     place: 'Olomouc',
   },
+  {
+    date: '19.11.2021',
+    name: 'MOLLY',
+    place: 'Karlovy Vary',
+  },
 ];
 
 export default shows;
