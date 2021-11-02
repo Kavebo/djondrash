@@ -16,7 +16,7 @@ const mail = async (req: NextApiRequest, res: NextApiResponse) => {
 
   try {
     await sendgrid.send(data);
-  } catch (error) {
+  } catch (error: any) {
     console.error(error);
 
     if (error.response) {

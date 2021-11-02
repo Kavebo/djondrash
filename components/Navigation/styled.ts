@@ -23,6 +23,10 @@ export const LeftSide = styled.div`
 
 export const RightSide = styled.div`
   display: flex;
+
+  @media only screen and (min-width: 768px) and (orientation: landscape) {
+    margin-right: 5%;
+  }
 `;
 
 export const Img = styled.img`
