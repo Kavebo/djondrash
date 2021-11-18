@@ -117,9 +117,14 @@ export const MenuIconWrapper = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-  width: 70px;
-
+  width: 50px;
+  height: 50px;
   animation: drop-down 1s cubic-bezier(0.2, -2, 0.8, 2), show 1s ease-in;
+
+  @media only screen and (min-width: 768px) and (orientation: landscape) {
+    width: 70px;
+    height: 70px;
+  }
 
   @keyframes show {
     from {
