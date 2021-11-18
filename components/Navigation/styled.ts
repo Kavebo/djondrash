@@ -16,17 +16,13 @@ export const MenuIconsWrapper = styled.div`
 
 export const LeftSide = styled.div`
   display: flex;
-  justify-content: space-between;
   margin-left: 5%;
   width: 120px;
 `;
 
 export const RightSide = styled.div`
   display: flex;
-
-  @media only screen and (min-width: 768px) and (orientation: landscape) {
-    margin-right: 5%;
-  }
+  margin-right: 5%;
 `;
 
 export const Img = styled.img`
