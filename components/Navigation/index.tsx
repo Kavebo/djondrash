@@ -5,6 +5,7 @@ import languageIcon from '../../assets/images/CZ-EN_button.svg';
 import homeIcon from '../../assets/images/HOME_button.svg';
 import menuIcon from '../../assets/images/MENU_button.svg';
 import twitterIcon from '../../assets/images/twitter_icon.png';
+import messengerIcon from '../../assets/images/messenger_icon.svg';
 import { useTranslation } from '../../languages';
 import { LanguageContext, locales } from '../../languages/LanguageProvider';
 import {
@@ -66,9 +67,14 @@ const Navigation = () => {
         </LeftSide>
         <RightSide>
           <ImageWrapper>
-            <Link href="https://twitter.com/djondrash" passHref>
+            <a href="https://m.me/100073730272897" target="_blank" rel="noreferrer">
+              <Img src={messengerIcon} style={{ padding: 10 }} />
+            </a>
+          </ImageWrapper>
+          <ImageWrapper>
+            <a href="https://twitter.com/djondrash" target="_blank" rel="noreferrer">
               <Img src={twitterIcon} style={{ padding: 10 }} />
-            </Link>
+            </a>
           </ImageWrapper>
           <ImageWrapper>
             <Img src={menuIcon} onClick={handleOnMenuClick} />
