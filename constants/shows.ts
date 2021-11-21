@@ -99,7 +99,7 @@ const shows = [
     name: 'MOLLY',
     place: 'Karlovy Vary',
   },
-   {
+  {
     date: '16.11.2021',
     name: 'Varna',
     place: 'Olomouc',
@@ -109,6 +109,17 @@ const shows = [
     name: 'MOLLY',
     place: 'Karlovy Vary',
   },
+  {
+    date: '26.11.2021',
+    name: 'Za5Dvanáct',
+    place: 'Praha',
+  },
+  {
+    date: '29.12.2021',
+    name: 'Red Bull Homerun',
+    place: 'Špindlerův Mlýn',
+  },
+  
 ];
 
 export default shows;
