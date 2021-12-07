@@ -1,8 +1,7 @@
-import { isMobile } from 'react-device-detect';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  height: 10vh;
+  min-height: 8vh;
   display: flex;
   justify-content: space-between;
   margin-top: 0px;
@@ -23,39 +22,6 @@ export const LeftSide = styled.div`
 export const RightSide = styled.div`
   display: flex;
   margin-right: 5%;
-`;
-
-export const Img = styled.img`
-  width: 50px;
-  height: 50px;
-  transition: all 0.15s linear;
-
-  :hover {
-    cursor: pointer;
-  }
-
-  @media only screen and (min-width: 768px) and (orientation: landscape) {
-    width: 70px;
-    height: 70px;
-  }
-
-  ${() => {
-    if (!isMobile) {
-      return css`
-        :hover {
-          width: 60px;
-          height: 60px;
-        }
-
-        @media only screen and (min-width: 768px) and (orientation: landscape) {
-          :hover {
-            width: 80px;
-            height: 80px;
-          }
-        }
-      `;
-    }
-  }}
 `;
 
 export const NavBarWrapper = styled.div<{ $showNavbar?: boolean }>`
@@ -110,12 +76,28 @@ export const NavBarWrapper = styled.div<{ $showNavbar?: boolean }>`
 
 export const MenuIconWrapper = styled.div`
   margin: 0 auto;
+
+  :hover {
+    cursor: pointer;
+  }
 `;
 
 export const ImageWrapper = styled.div`
-  width: 50px;
-  height: 50px;
+  margin-top: 10px;
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
   animation: drop-down 1s cubic-bezier(0.2, -2, 0.8, 2), show 1s ease-in;
+  transition: all linear 0.1s;
+
+  :last-child {
+    margin-right: 0px;
+  }
+
+  :hover {
+    margin-top: 15px;
+    cursor: pointer;
+  }
 
   @media only screen and (min-width: 768px) and (orientation: landscape) {
     width: 70px;

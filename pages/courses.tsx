@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import React from 'react';
 import styled from 'styled-components';
+import Image from 'next/image';
 
-import background from '../assets/images/background3_phone.jpg';
+import backgroundImage from '../assets/images/background3_phone_lighten.jpg';
 import calendarIcon from '../assets/images/calendar_icon.png';
 import locationIcon from '../assets/images/location_icon.png';
 import mailIcon from '../assets/images/mail_icon.png';
@@ -12,38 +13,38 @@ import Navigation from '../components/Navigation';
 import { useTranslation } from '../languages';
 
 const Wrapper = styled.div`
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5)), url(${background});
-  background-repeat: repeat;
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  max-height: 100vh;
+  overflow: scroll;
 `;
 
 const ContentWrapper = styled.div`
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
-
+  z-index: 1;
   flex: 1;
-  height: 100vh;
   margin: auto;
   padding: 10px;
 
   @media only screen and (min-width: 666px) {
     max-width: 90%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 `;
 
-const Icon = styled.img`
+const IconWrapper = styled.div`
   width: 20%;
   max-width: 100%;
 `;
 
 const ItemWrapper = styled.div`
+  height: 15%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -83,7 +84,7 @@ const ItemWrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  padding: 3%;
+  padding: 20px;
   margin: auto;
   color: #eadcca;
 `;
@@ -141,6 +142,7 @@ const Courses = () => {
 
   return (
     <Wrapper>
+      <Image src={backgroundImage} alt="background" layout="fill" objectFit="cover" />
       <Head>
         <title>Dj Ondrash - Courses</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -155,7 +157,9 @@ const Courses = () => {
       <ContentWrapper>
         {courseData.map(({ text, icon }, index) => (
           <ItemWrapper key={index}>
-            <Icon src={icon} />
+            <IconWrapper>
+              <Image src={icon} alt="icon" objectFit="contain" />
+            </IconWrapper>
             <ItemText>
               {t(text)}
               {text === 'courses_mail' && <ItemMail href="mailto: djondrash@gmail.com">djondrash@gmail.com</ItemMail>}

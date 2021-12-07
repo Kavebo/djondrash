@@ -1,6 +1,7 @@
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
+import Image from 'next/image';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
@@ -11,30 +12,29 @@ import React from 'react';
 import { useMemo } from 'react';
 import styled from 'styled-components';
 
-import background from '../assets/images/background3_phone.jpg';
+import backgroundImage from '../assets/images/background3_phone.jpg';
 import Navigation from '../components/Navigation';
 import tableData from '../constants/shows';
 import { useTranslation } from '../languages';
 
 const Wrapper = styled.div`
-  background: url(${background});
-  background-repeat: repeat;
-  background-size: cover;
   width: 100%;
-  height: 100%;
   min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  overflow: scroll;
 `;
 
 const GalleryWrapper = styled.div`
-  overflow: scroll;
+  overflow-x: scroll;
   max-width: 100%;
   flex: 1;
   height: 100vh;
   margin: auto;
   padding: 10px;
+  z-index: 1;
 `;
 
 const useStyles = makeStyles({
@@ -65,6 +65,7 @@ const Shows = () => {
         <meta name="author" content="Jozef Bobo Kavecansky" />
         <meta name="description" content="DJ Ondrash's shows and concerts." />
       </Head>
+      <Image src={backgroundImage} alt="background" layout="fill" objectFit="cover" />
       <Navigation />
       <GalleryWrapper>
         <TableContainer className={classes.container} component={Paper}>

@@ -1,16 +1,17 @@
 import React from 'react';
+import Image from 'next/image';
+import { isMobile } from 'react-device-detect';
 
-import downloadIcon from '../../assets/images/Download_button.svg';
-import youtubeIcon from '../../assets/images/youtube_icon_dark2.png';
-import soundcloudIcon from '../../assets/images/soundcloud_dark.png';
-import spotify_logo_dark from '../../assets/images/spotify_logo_dark2.png';
+import backgroundImage from '../../../assets/images/background3_phone.jpg';
+import downloadIcon from '../../../assets/images/Download_button.svg';
+import youtubeIcon from '../../../assets/images/youtube_icon_dark2.png';
+import soundcloudIcon from '../../../assets/images/soundcloud_dark.png';
+import spotify_logo_dark from '../../../assets/images/spotify_logo_dark2.png';
 import {
   Column,
-  DownloadIcon,
   DownloadLinkWrapper,
   EmailLink,
   IconsWrapper,
-  Img,
   Link,
   Row,
   SignatureWrapper,
@@ -18,13 +19,22 @@ import {
   Wrapper,
 } from './styled';
 
+const ICON_HEIGHT = isMobile ? 30 : 50;
+const DOWNLOAD_ICON_HEIGHT = isMobile ? 70 : 90;
+
 const ThirdPart = () => {
   return (
     <Wrapper>
+      <Image src={backgroundImage} alt="background" layout="fill" objectFit="cover" />
       <Column>
         <DownloadLinkWrapper>
           <Link href="https://www.dropbox.com/sh/hbrg1m0fk8dqois/AABLSf1uBH9hPVuweScEUEFQa?dl=0" target="_blank">
-            <DownloadIcon src={downloadIcon} alt="JD Ondrash content" />
+            <Image
+              src={downloadIcon}
+              alt="JD Ondrash content"
+              width={DOWNLOAD_ICON_HEIGHT}
+              height={DOWNLOAD_ICON_HEIGHT}
+            />
           </Link>
         </DownloadLinkWrapper>
         <Row>
@@ -33,7 +43,7 @@ const ThirdPart = () => {
         <IconsWrapper>
           <SocialIconWrapper>
             <Link href="https://www.youtube.com/channel/UCrX211qiOB5XE3NSBuM-xbg" target="_blank">
-              <Img src={youtubeIcon} alt="DJ Ondrash youtube" />
+              <Image src={youtubeIcon} alt="DJ Ondrash youtube" width={ICON_HEIGHT} height={ICON_HEIGHT} />
             </Link>
           </SocialIconWrapper>
           <SocialIconWrapper>
@@ -41,12 +51,12 @@ const ThirdPart = () => {
               href="https://open.spotify.com/user/1uw2notq7eadot3ajdpjkneeh?si=P1klSqzDTRKkG_yN2PIp9Q"
               target="_blank"
             >
-              <Img src={spotify_logo_dark} alt="DJ Ondrash spotify" />
+              <Image src={spotify_logo_dark} alt="DJ Ondrash spotify" width={ICON_HEIGHT} height={ICON_HEIGHT} />
             </Link>
           </SocialIconWrapper>
           <SocialIconWrapper>
             <Link href="https://soundcloud.com/djondrash" target="_blank">
-              <Img src={soundcloudIcon} alt="DJ Ondrash soundcloud" />
+              <Image src={soundcloudIcon} alt="DJ Ondrash soundcloud" width={ICON_HEIGHT} height={ICON_HEIGHT} />
             </Link>
           </SocialIconWrapper>
         </IconsWrapper>

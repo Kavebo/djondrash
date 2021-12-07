@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
+import Image from 'next/image';
 
-import background from '../assets/images/background3_phone.jpg';
+import backgroundImage from '../assets/images/background3_phone.jpg';
 import Navigation from '../components/Navigation';
 import { getUsers } from '../constants/firebase/users';
 import FirebaseAuth from '../constants/firebase/FirebaseAuth';
@@ -10,8 +11,6 @@ import MailSender from '../components/MailSender';
 import EmailMultiSelect from '../components/MultiSelect';
 
 const Wrapper = styled.div`
-  background: url(${background});
-  background-repeat: repeat;
   width: 100%;
   height: 100%;
   min-height: 100vh;
@@ -26,6 +25,7 @@ const ContentWrapper = styled.div`
   width: 100%;
   margin: auto;
   padding: 10px;
+  z-index: 1;
 
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     max-width: 70%;
@@ -53,6 +53,7 @@ const Emails = () => {
       <Head>
         <title>Dj Ondrash - Email sender</title>
       </Head>
+      <Image src={backgroundImage} alt="background" layout="fill" objectFit="cover" />
       <Navigation />
       <ContentWrapper>
         <FirebaseAuth>

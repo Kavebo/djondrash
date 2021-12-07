@@ -3,8 +3,9 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import Image from 'next/image';
 
-import background from '../assets/images/background3_phone.jpg';
+import backgroundImage from '../assets/images/background3_phone.jpg';
 import { initializeFirebase } from '../constants/firebase/firebase';
 import { deleteUser } from '../constants/firebase/users';
 import { useTranslation } from '../languages';
@@ -12,8 +13,6 @@ import { useTranslation } from '../languages';
 initializeFirebase();
 
 const Wrapper = styled.div`
-  background: url(${background});
-  background-repeat: repeat;
   width: 100%;
   height: 100%;
   min-height: 100vh;
@@ -24,6 +23,7 @@ const Wrapper = styled.div`
 
 const ContentWrapper = styled.div`
   flex: 1;
+  z-index: 1;
   height: 100vh;
   padding: 10px;
 `;
@@ -56,6 +56,7 @@ const Unsubscribe = () => {
       <Head>
         <title>Dj Ondrash - unsubscribe</title>
       </Head>
+      <Image src={backgroundImage} alt="background" layout="fill" objectFit="cover" />
       <ContentWrapper>
         <Link href="/" passHref>
           <Label>{t('unsubscribe_label')}</Label>

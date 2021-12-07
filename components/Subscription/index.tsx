@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { ErrorMessage } from '@hookform/error-message';
 
-import logo from '../../assets/images/Logo.png';
+// import logo from '../../../assets/images/Logo.png';
 import { postUser } from '../../constants/firebase/users';
 import { useTranslation } from '../../languages';
 import { EmailInput, FormWrapper, InputWrapper, Label, Label2, LogoImageWrapper, SubscribeButton } from './styled';
@@ -43,9 +43,7 @@ const Subscription: React.FC<ISubscription> = ({ closeModal }) => {
           <SubscribeButton type="submit">{t('subscription_button')}</SubscribeButton>
           <ErrorMessage message={t('subscription_invalid_email')} errors={errors} name="email" />
         </InputWrapper>
-        <LogoImageWrapper>
-          <img src={logo} alt="dj ondrash logo" width={100} height={50} />
-        </LogoImageWrapper>
+        <LogoImageWrapper>{/* <img src={logo} alt="dj ondrash logo" width={100} height={50} /> */}</LogoImageWrapper>
       </form>
     </FormWrapper>
   );

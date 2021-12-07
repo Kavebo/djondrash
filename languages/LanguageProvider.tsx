@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react';
+import { useEffect } from 'react';
 import { createContext, useState } from 'react';
 import { LANGUAGE_COOKIE, ONE_YEAR_IN_DAYS } from '../utils/constants';
 import { getCookie, setCookie } from '../utils/cookies';
@@ -15,7 +15,7 @@ export const LanguageContext = createContext<{ locale: Languages; setLocale: (la
 export const LanguageProvider: React.FC = ({ children }) => {
   const [locale, _setLocale] = useState<Languages>('en');
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const languageCookie = getCookie(LANGUAGE_COOKIE);
     if (languageCookie) _setLocale(languageCookie as Languages);
   }, []);

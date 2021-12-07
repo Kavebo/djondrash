@@ -1,19 +1,19 @@
 import Head from 'next/head';
 import React from 'react';
 import styled from 'styled-components';
+import Image from 'next/image';
 
-import background from '../assets/images/background3_phone.jpg';
+import backgroundImage from '../assets/images/background3_phone.jpg';
 import Card from '../components/Card';
 import Navigation from '../components/Navigation';
 import pressData from '../constants/press';
 import { useTranslation } from '../languages';
 
 const Wrapper = styled.div`
-  background: url(${background});
-  background-repeat: repeat;
   width: 100%;
-  height: 100%;
+  overflow: scroll;
   min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -22,10 +22,8 @@ const Wrapper = styled.div`
 const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-
-  flex: 1;
-  height: 100vh;
-  margin: auto;
+  z-index: 1;
+  margin: 0 auto;
   padding: 10px;
 
   @media only screen and (min-width: 666px) {
@@ -55,12 +53,13 @@ const Press = () => {
         <meta name="author" content="Jozef Bobo Kavecansky" />
         <meta name="description" content="Articles about DJ Ondrash ." />
       </Head>
+      <Image src={backgroundImage} alt="background" layout="fill" objectFit="cover" />
       <Navigation />
       <ContentWrapper>
         {pressData.map(({ link, image }) => (
-          <a href={link} target="_blank" key={link}>
+          <a href={link} target="_blank" key={link} rel="noreferrer">
             <Card>
-              <PressImage src={image} />
+              <Image src={image} alt="press" />
             </Card>
           </a>
         ))}

@@ -1,12 +1,7 @@
 import styled, { css } from 'styled-components';
 
-import backgroundPhone from '../../assets/images/background1_phone.jpg';
-
 export const Wrapper = styled.div`
-  background: url(${backgroundPhone});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -129,14 +124,6 @@ export const TextBold = styled(Text)`
 `;
 
 export const LogoWrapper = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  text-align: right;
-`;
-
-export const LogoImage = styled.img`
   width: 40%;
-  height: 20%;
+  margin-left: auto;
 `;
