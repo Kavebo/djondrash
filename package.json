@@ -9,7 +9,7 @@
     "start": "next start",
     "export": "next export",
     "deploy": "gh-pages -d out",
-    "tsc:check": "tsc --noEmit --project tsconfig.json"
+    "tsc:check": "tsc --noEmit"
   },
   "dependencies": {
     "@emotion/react": "^11.4.1",
