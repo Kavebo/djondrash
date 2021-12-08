@@ -25,7 +25,7 @@ const ContentWrapper = styled.div`
   width: 100%;
   margin: auto;
   padding: 10px;
-  z-index: 1;
+  z-index: 10;
 
   @media only screen and (min-width: 1024px) and (orientation: landscape) {
     max-width: 70%;

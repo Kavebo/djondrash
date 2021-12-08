@@ -30,7 +30,7 @@ const ImageWrapper = styled.div`
 
 const ContentWrapper = styled.div`
   flex: 1;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   margin: auto;
   padding: 10px;
@@ -107,8 +107,8 @@ const Pictures = () => {
 };
 
 // eslint-disable-next-line react/display-name
-const ModalImage: React.FC<CommonProps> = React.memo(({ currentIndex }) => {
-  const { src } = photos[currentIndex!];
+const ModalImage: React.FC<CommonProps> = React.memo((props) => {
+  const { src } = (props as any).data;
 
   return (
     <ImageWrapper>

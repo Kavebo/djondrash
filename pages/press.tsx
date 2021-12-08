@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  z-index: 1;
+  z-index: 10;
   margin: 0 auto;
   padding: 10px;
 
@@ -59,7 +59,7 @@ const Press = () => {
         {pressData.map(({ link, image }) => (
           <a href={link} target="_blank" key={link} rel="noreferrer">
             <Card>
-              <Image src={image} alt="press" />
+              <Image src={image} alt="press" quality={10} objectFit="contain" />
             </Card>
           </a>
         ))}

@@ -33,8 +33,9 @@ const GalleryWrapper = styled.div`
   flex: 1;
   height: 100vh;
   margin: auto;
+  margin-bottom: 30px;
   padding: 10px;
-  z-index: 1;
+  z-index: 10;
 `;
 
 const useStyles = makeStyles({
@@ -78,8 +79,8 @@ const Shows = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {showData.map((row) => (
-                <TableRow key={row.name}>
+              {showData.map((row, index) => (
+                <TableRow key={index}>
                   <TableCell className={classes.cell} component="th" scope="row">
                     {row.date}
                   </TableCell>

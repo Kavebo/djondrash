@@ -25,7 +25,7 @@ const ContentWrapper = styled.div`
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
-  z-index: 1;
+  z-index: 10;
   flex: 1;
   margin: auto;
   padding: 10px;
@@ -54,6 +54,8 @@ const ItemWrapper = styled.div`
   max-width: 50%;
   text-align: center;
   white-space: pre-line;
+  animation: left-right 1s cubic-bezier(0.2, -2, 0.8, 2), show 1s ease-in;
+  transition: all linear 0.1s;
 
   @media only screen and (min-width: 666px) {
     :nth-of-type(1n) {
@@ -79,6 +81,15 @@ const ItemWrapper = styled.div`
     :nth-of-type(5n) {
       grid-column-start: 3;
       grid-column-end: 5;
+    }
+  }
+
+  @keyframes left-right {
+    from {
+      transform: translateX(-70px);
+    }
+    to {
+      transform: translateX(0px);
     }
   }
 `;

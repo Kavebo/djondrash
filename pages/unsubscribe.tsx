@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 
 const ContentWrapper = styled.div`
   flex: 1;
-  z-index: 1;
+  z-index: 10;
   height: 100vh;
   padding: 10px;
 `;

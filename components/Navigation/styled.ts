@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  min-height: 8vh;
+  min-height: 10vh;
   display: flex;
   justify-content: space-between;
   margin-top: 0px;
+  z-index: 200;
 `;
 
 export const MenuIconsWrapper = styled.div`
@@ -34,7 +35,7 @@ export const NavBarWrapper = styled.div<{ $showNavbar?: boolean }>`
   top: 0;
   text-align: center;
   margin: 0;
-  z-index: 10;
+  z-index: 100;
   animation: ease-i 0.5s;
 
   @keyframes ease-o {
@@ -85,8 +86,8 @@ export const MenuIconWrapper = styled.div`
 export const ImageWrapper = styled.div`
   margin-top: 10px;
   margin-right: 5px;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   animation: drop-down 1s cubic-bezier(0.2, -2, 0.8, 2), show 1s ease-in;
   transition: all linear 0.1s;
 
