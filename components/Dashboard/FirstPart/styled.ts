@@ -65,6 +65,8 @@ export const Column = styled.div<{ $isPortraitMode?: boolean }>`
   flex: 1;
   margin-left: 5%;
   margin-right: 5%;
+  animation: left-right 1s cubic-bezier(0.2, -2, 0.8, 2), show 1s ease-in;
+  transition: all linear 0.1s;
 
   ${({ $isPortraitMode }) => {
     if ($isPortraitMode) {
@@ -73,6 +75,15 @@ export const Column = styled.div<{ $isPortraitMode?: boolean }>`
       `;
     }
   }}
+
+  @keyframes left-right {
+    from {
+      transform: translateX(-70px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+  }
 `;
 
 export const MainColumn = styled.div`
