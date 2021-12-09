@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
 
-import FirstPart from '../components/FirstPart';
+import FirstPart from '../components/Dashboard/FirstPart';
 import Modal from '../components/Modal';
-import SecondPart from '../components/SecondPart';
+import SecondPart from '../components/Dashboard/SecondPart';
 import Subscription from '../components/Subscription';
-import ThirdPart from '../components/ThirdPart';
+import ThirdPart from '../components/Dashboard/ThirdPart';
 import { initializeFirebase } from '../constants/firebase/firebase';
 import { SUBSCRIPTION_COOKIE, ONE_YEAR_IN_DAYS } from '../utils/constants';
 import { getCookie, setCookie } from '../utils/cookies';

@@ -1,21 +1,16 @@
-import { isMobile } from 'react-device-detect';
-import styled, { css } from 'styled-components';
-
-import backgroundPhone from '../../assets/images/background3_phone.jpg';
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  background: url(${backgroundPhone});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 `;
 
 export const EmailLink = styled.a`
+  z-index: 10;
   min-height: 60px;
   color: #eadcca;
   font-size: 35px;
@@ -47,32 +42,15 @@ export const EmailLink = styled.a`
 export const SocialIconWrapper = styled.div`
   width: 80px;
   margin: auto;
+  transition: all linear 0.1s;
 
   @media only screen and (min-width: 1000px) {
     width: 120px;
   }
-`;
 
-export const Img = styled.img`
-  width: fit-content;
-  max-width: 50px;
-  transition: all 0.15s linear;
-
-  ${() => {
-    if (!isMobile) {
-      return css`
-        :hover {
-          max-width: 55px;
-        }
-
-        @media only screen and (min-width: 700px) and (min-height: 600px) {
-          :hover {
-            max-width: 55px;
-          }
-        }
-      `;
-    }
-  }}
+  :hover {
+    padding-top: 10px;
+  }
 `;
 
 export const Link = styled.a`
@@ -84,23 +62,10 @@ export const DownloadLinkWrapper = styled.div`
   width: 100%;
   text-align: center;
   height: 140px;
-`;
-
-export const DownloadIcon = styled.img`
-  width: 70px;
-  margin: auto;
-  transition: all 0.15s linear;
+  transition: all linear 0.1s;
 
   :hover {
-    width: 80px;
-  }
-
-  @media only screen and (min-width: 700px) {
-    width: 120px;
-
-    :hover {
-      width: 130px;
-    }
+    padding-top: 10px;
   }
 `;
 
@@ -133,7 +98,8 @@ export const Column = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  height: 90%;
+  min-height: 90vh;
+  z-index: 10;
 `;
 
 export const SignatureWrapper = styled.div`
@@ -141,4 +107,5 @@ export const SignatureWrapper = styled.div`
   color: #eadcca;
   margin-bottom: 20px;
   margin-right: 20px;
+  z-index: 10;
 `;

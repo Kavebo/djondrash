@@ -36,6 +36,7 @@ export default class MyDocument extends Document {
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
           />
+          <script async src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" />
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -50,6 +51,7 @@ export default class MyDocument extends Document {
           />
         </Head>
         <body>
+          <div id="particles-js" style={{ position: 'absolute', zIndex: 1, height: '100%' }}></div>
           <Main />
           <NextScript />
         </body>

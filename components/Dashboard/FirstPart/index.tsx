@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { isMobileOnly } from 'react-device-detect';
+import Image from 'next/image';
 
-import logo from '../../assets/images/Logo.png';
-import { useTranslation } from '../../languages';
-import Navigation from '../Navigation';
-import { Column, InfoWrapper, LogoImage, LogoWrapper, MainColumn, Row, Text, TextInOneRow, Wrapper } from './styled';
+import logo from '../../../assets/images/Logo.png';
+import { useTranslation } from '../../../languages';
+import Navigation from '../../Navigation';
+import { Column, InfoWrapper, LogoWrapper, MainColumn, Row, Text, TextInOneRow, Wrapper } from './styled';
+import backgroundImage from '../../../assets/images/background1_phone.jpg';
 
 const FirstPart = () => {
   const { t } = useTranslation();
@@ -44,7 +46,7 @@ const FirstPart = () => {
       </Column>
       <Column>
         <LogoWrapper>
-          <LogoImage src={logo} alt="dj ondrash logo" width={200} />
+          <Image src={logo} objectFit="contain" alt="logo" />
         </LogoWrapper>
       </Column>
     </MainColumn>
@@ -78,7 +80,7 @@ const FirstPart = () => {
         <Column>
           <Text>{t('about4')}</Text>
           <LogoWrapper>
-            <LogoImage src={logo} width={200} />
+            <Image src={logo} objectFit="contain" alt="logo" />
           </LogoWrapper>
         </Column>
       </Row>
@@ -87,6 +89,8 @@ const FirstPart = () => {
 
   return (
     <Wrapper>
+      <Image src={backgroundImage} alt="background" layout="fill" objectFit="cover" />
+
       <Navigation />
       <InfoWrapper>{isMobileOnly && isPortraitMode ? BodyPortrait() : BodyLandscape()}</InfoWrapper>
     </Wrapper>

@@ -1,22 +1,17 @@
 import styled from 'styled-components';
 
-import backgroundPhone from '../../assets/images/background2_phone.jpg';
-
 export const Wrapper = styled.div`
-  background: url(${backgroundPhone});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 `;
 
 export const ImageWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  min-height: 100vh;
   width: 100%;
-  height: 100%;
 `;
 
 export const Img = styled.img`
