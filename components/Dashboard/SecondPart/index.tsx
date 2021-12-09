@@ -7,7 +7,7 @@ import backgroundImage from '../../../assets/images/background2_phone.jpg';
 
 const SecondPart = () => {
   useEffect(() => {
-    window.particlesJS.load('particles-js1', 'particles.json', function () {
+    window.particlesJS?.load('particles-js1', 'particles.json', function () {
       console.log('callback - particles.js config loaded');
     });
   }, []);
