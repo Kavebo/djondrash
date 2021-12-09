@@ -99,6 +99,7 @@ export const Column = styled.div`
   justify-content: space-evenly;
   flex-direction: column;
   min-height: 90vh;
+  z-index: 10;
 `;
 
 export const SignatureWrapper = styled.div`
@@ -106,4 +107,5 @@ export const SignatureWrapper = styled.div`
   color: #eadcca;
   margin-bottom: 20px;
   margin-right: 20px;
+  z-index: 10;
 `;

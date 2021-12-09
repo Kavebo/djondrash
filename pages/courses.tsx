@@ -22,12 +22,11 @@ const Wrapper = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-  margin-top: 20px;
+  margin: 10px auto 50px auto;
   display: grid;
   grid-template-columns: 1fr;
   z-index: 10;
   flex: 1;
-  margin: auto;
   padding: 10px;
 
   @media only screen and (min-width: 666px) {
