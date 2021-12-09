@@ -24,7 +24,7 @@ const DOWNLOAD_ICON_HEIGHT = isMobile ? 70 : 90;
 
 const ThirdPart = () => {
   useEffect(() => {
-    window.particlesJS.load('particles-js2', 'particles.json', function () {
+    window.particlesJS?.load('particles-js2', 'particles.json', function () {
       console.log('callback - particles.js config loaded');
     });
   }, []);
