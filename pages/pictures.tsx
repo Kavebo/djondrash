@@ -108,11 +108,13 @@ const Pictures = () => {
 
 // eslint-disable-next-line react/display-name
 const ModalImage: React.FC<CommonProps> = React.memo((props) => {
-  const { src } = (props as any).data;
+  const { src: srcObject } = (props as any).data;
+  const { height, width } = srcObject || {};
+  const objectFit = height > width ? 'none' : 'cover';
 
   return (
     <ImageWrapper>
-      <Image src={src} objectFit="contain" alt="picture" />
+      <Image src={srcObject} objectFit={objectFit} alt="picture" />
     </ImageWrapper>
   );
 });
