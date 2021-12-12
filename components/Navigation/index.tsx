@@ -22,7 +22,6 @@ const Navigation = () => {
 
   const handleOnLanguageClick = () => {
     setLocale(locales[(locales.indexOf(locale) + 1) % 2]);
-    handleOnMenuClick();
   };
 
   const handleOnMenuClick = () => {
@@ -45,14 +44,6 @@ const Navigation = () => {
           <Link href="/courses" passHref>
             <li>{t('courses')}</li>
           </Link>
-
-          <Image
-            src={languageIcon}
-            alt="icon"
-            onClick={handleOnLanguageClick}
-            width={ICON_HEIGHT * 1.5}
-            height={ICON_HEIGHT * 1.3}
-          />
         </ul>
         <MenuIconWrapper>
           <Image src={menuIcon} alt="icon" onClick={handleOnMenuClick} width={ICON_HEIGHT} height={ICON_HEIGHT} />
@@ -65,6 +56,15 @@ const Navigation = () => {
             <Link href="/" passHref>
               <Image src={homeIcon} alt="icon" objectFit="contain" />
             </Link>
+          </ImageWrapper>
+          <ImageWrapper>
+            <Image
+              src={languageIcon}
+              alt="icon"
+              onClick={handleOnLanguageClick}
+              width={ICON_HEIGHT * 1.5}
+              height={ICON_HEIGHT * 1.3}
+            />
           </ImageWrapper>
         </LeftSide>
         <RightSide>
