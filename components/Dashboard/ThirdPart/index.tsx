@@ -1,24 +1,11 @@
-import React, { useEffect } from 'react';
 import Image from 'next/image';
+import React, { useEffect } from 'react';
 import { isMobile } from 'react-device-detect';
 
 import backgroundImage from '../../../assets/images/background3_phone.jpg';
 import downloadIcon from '../../../assets/images/Download_button.svg';
-import youtubeIcon from '../../../assets/images/youtube_icon_dark2.png';
-import soundcloudIcon from '../../../assets/images/soundcloud_dark.png';
-import {
-  Column,
-  DownloadLinkWrapper,
-  EmailLink,
-  IconsWrapper,
-  Link,
-  Row,
-  SignatureWrapper,
-  SocialIconWrapper,
-  Wrapper,
-} from './styled';
+import { Column, DownloadLinkWrapper, EmailLink, Link, Row, SignatureWrapper, Wrapper } from './styled';
 
-const ICON_HEIGHT = isMobile ? 30 : 50;
 const DOWNLOAD_ICON_HEIGHT = isMobile ? 70 : 90;
 
 const ThirdPart = () => {
@@ -46,18 +33,6 @@ const ThirdPart = () => {
         <Row>
           <EmailLink href="mailto: djondrash@gmail.com">djondrash@gmail.com</EmailLink>
         </Row>
-        <IconsWrapper>
-          <SocialIconWrapper>
-            <Link href="https://www.youtube.com/channel/UCrX211qiOB5XE3NSBuM-xbg" target="_blank">
-              <Image src={youtubeIcon} alt="DJ Ondrash youtube" width={ICON_HEIGHT} height={ICON_HEIGHT} />
-            </Link>
-          </SocialIconWrapper>
-          <SocialIconWrapper>
-            <Link href="https://soundcloud.com/djondrash" target="_blank">
-              <Image src={soundcloudIcon} alt="DJ Ondrash soundcloud" width={ICON_HEIGHT} height={ICON_HEIGHT} />
-            </Link>
-          </SocialIconWrapper>
-        </IconsWrapper>
       </Column>
       <SignatureWrapper>
         <a href="mailto: jozef.kavecansky@gmail.com">Made by Bobo</a>

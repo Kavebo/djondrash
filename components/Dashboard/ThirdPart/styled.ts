@@ -39,20 +39,6 @@ export const EmailLink = styled.a`
   }
 `;
 
-export const SocialIconWrapper = styled.div`
-  width: 80px;
-  margin: auto;
-  transition: all linear 0.1s;
-
-  @media only screen and (min-width: 1000px) {
-    width: 120px;
-  }
-
-  :hover {
-    padding-top: 10px;
-  }
-`;
-
 export const Link = styled.a`
   height: 100%;
 `;
@@ -78,19 +64,6 @@ export const Row = styled.div`
 
   @media only screen and (mix-width: 800px) {
     min-height: 100px;
-  }
-`;
-
-export const IconsWrapper = styled(Row)`
-  height: 100px;
-  width: 50%;
-
-  @media only screen and (max-width: 700px) {
-    width: 70%;
-  }
-
-  @media only screen and (max-width: 600px) {
-    width: 90%;
   }
 `;
 

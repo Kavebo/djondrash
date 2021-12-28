@@ -9,6 +9,8 @@ import menuIcon from '../../assets/images/MENU_button.svg';
 import messengerIcon from '../../assets/images/messenger_icon.svg';
 import spotify_logo_dark from '../../assets/images/spotify_logo_dark2.png';
 import twitterIcon from '../../assets/images/twitter_icon.png';
+import youtubeIcon from '../../assets/images/youtube_icon_white.png';
+import soundcloudIcon from '../../assets/images/soundcloud_icon_white.png';
 import { useTranslation } from '../../languages';
 import { LanguageContext, locales } from '../../languages/LanguageProvider';
 import { ImageWrapper, LeftSide, MenuIconsWrapper, MenuIconWrapper, NavBarWrapper, RightSide, Wrapper } from './styled';
@@ -68,6 +70,16 @@ const Navigation = () => {
           </ImageWrapper>
         </LeftSide>
         <RightSide>
+          <ImageWrapper>
+            <a href="https://www.youtube.com/channel/UCrX211qiOB5XE3NSBuM-xbg" target="_blank" rel="noreferrer">
+              <Image src={youtubeIcon} alt="icon" width={ICON_HEIGHT} height={ICON_HEIGHT} />
+            </a>
+          </ImageWrapper>
+          <ImageWrapper>
+            <a href="https://soundcloud.com/djondrash" target="_blank" rel="noreferrer">
+              <Image src={soundcloudIcon} alt="icon" width={ICON_HEIGHT} height={ICON_HEIGHT} />
+            </a>
+          </ImageWrapper>
           <ImageWrapper>
             <a
               href="https://open.spotify.com/user/1uw2notq7eadot3ajdpjkneeh?si=P1klSqzDTRKkG_yN2PIp9Q"
