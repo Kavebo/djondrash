@@ -119,7 +119,26 @@ const shows = [
     name: 'Red Bull Homerun',
     place: 'Špindlerův Mlýn',
   },
-  
+  {
+    date: '14.01.2022',
+    name: 'PlayOF Varna',
+    place: 'Olomouc',
+  },
+  {
+    date: '15.01.2022',
+    name: 'Red Bull Homerun',
+    place: 'Pec pod Sněžkou',
+  },
+  {
+    date: '22.01.2022',
+    name: 'Red Bull Homerun',
+    place: 'Dolní Morava',
+  },
+  {
+    date: '29.01.2022',
+    name: 'Moon Club',
+    place: 'Praha',
+  },
 ];
 
 export default shows;
