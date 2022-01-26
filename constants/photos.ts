@@ -22,8 +22,43 @@ import img21 from '../assets/images/gallery/img_21.jpg';
 import img22 from '../assets/images/gallery/img_22.jpg';
 import img23 from '../assets/images/gallery/img_23.jpg';
 import img24 from '../assets/images/gallery/img_24.jpg';
-
+import img25 from '../assets/images/gallery/img_25.jpg';
+import img26 from '../assets/images/gallery/img_26.jpg';
+import img27 from '../assets/images/gallery/img_27.jpg';
+import img28 from '../assets/images/gallery/img_28.jpg';
+import img29 from '../assets/images/gallery/img_29.jpg';
+import img30 from '../assets/images/gallery/img_30.jpg';
 export const photos = [
+  {
+    src: img30,
+    width: 5,
+    height: 3,
+  },
+  {
+    src: img29,
+    width: 5,
+    height: 3,
+  },
+  {
+    src: img28,
+    width: 5,
+    height: 3,
+  },
+  {
+    src: img27,
+    width: 5,
+    height: 3,
+  },
+  {
+    src: img26,
+    width: 5,
+    height: 3,
+  },
+  {
+    src: img25,
+    width: 5,
+    height: 3,
+  },
   {
     src: img24,
     width: 5,
