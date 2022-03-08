@@ -6,11 +6,11 @@ import { isMobile } from 'react-device-detect';
 import languageIcon from '../../assets/images/CZ-EN_button.svg';
 import homeIcon from '../../assets/images/HOME_button.svg';
 import menuIcon from '../../assets/images/MENU_button.svg';
-import messengerIcon from '../../assets/images/messenger_icon.svg';
-import spotify_logo_dark from '../../assets/images/spotify_logo_dark2.png';
-import twitterIcon from '../../assets/images/twitter_icon.png';
-import youtubeIcon from '../../assets/images/youtube_icon_white.png';
-import soundcloudIcon from '../../assets/images/soundcloud_icon_white.png';
+import twitchIcon from '../../assets/images/twitchLogo.svg';
+import tiktokIcon from '../../assets/images/tiktok-logo.svg';
+import patreonIcon from '../../assets/images/patreon-logo.png';
+import youtubeIcon from '../../assets/images/youtube-black-logo.png';
+import soundcloudIcon from '../../assets/images/soundcloud-black-logo.png';
 import { useTranslation } from '../../languages';
 import { LanguageContext, locales } from '../../languages/LanguageProvider';
 import { ImageWrapper, LeftSide, MenuIconsWrapper, MenuIconWrapper, NavBarWrapper, RightSide, Wrapper } from './styled';
@@ -81,22 +81,18 @@ const Navigation = () => {
             </a>
           </ImageWrapper>
           <ImageWrapper>
-            <a
-              href="https://open.spotify.com/user/1uw2notq7eadot3ajdpjkneeh?si=P1klSqzDTRKkG_yN2PIp9Q"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image src={spotify_logo_dark} alt="icon" width={ICON_HEIGHT} height={ICON_HEIGHT} />
+            <a href="https://www.tiktok.com/@djondrash" target="_blank" rel="noreferrer">
+              <Image src={tiktokIcon} alt="icon" width={ICON_HEIGHT} height={ICON_HEIGHT} />
             </a>
           </ImageWrapper>
           <ImageWrapper>
-            <a href="https://m.me/100073730272897" target="_blank" rel="noreferrer">
-              <Image src={messengerIcon} alt="icon" width={ICON_HEIGHT} height={ICON_HEIGHT} />
+            <a href="https://www.twitch.tv/djondrash_redbull3style" target="_blank" rel="noreferrer">
+              <Image src={twitchIcon} alt="icon" width={ICON_HEIGHT} height={ICON_HEIGHT} />
             </a>
           </ImageWrapper>
           <ImageWrapper>
-            <a href="https://twitter.com/djondrash" target="_blank" rel="noreferrer">
-              <Image src={twitterIcon} alt="icon" width={ICON_HEIGHT} height={ICON_HEIGHT} />
+            <a href="https://www.patreon.com/djondrash" target="_blank" rel="noreferrer">
+              <Image src={patreonIcon} alt="icon" width={ICON_HEIGHT} height={ICON_HEIGHT} />
             </a>
           </ImageWrapper>
           <ImageWrapper>
