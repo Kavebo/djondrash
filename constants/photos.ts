@@ -33,7 +33,7 @@ import img31 from '../assets/images/gallery/img_31.jpg';
 export const photos = [
 {
     src: img31,
-    width: 4,
+    width: 2,
     height: 3,
   },
   {
