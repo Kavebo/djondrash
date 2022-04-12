@@ -139,6 +139,36 @@ const shows = [
     name: 'Moon Club',
     place: 'Praha',
   },
+   {
+    date: '11.02.2022',
+    name: 'Varna Olomouc',
+    place: 'Olomouc',
+  },
+   {
+    date: '12.03.2022',
+    name: 'Jagermeister Rolba',
+    place: 'Špindlerův Mlýn',
+  },
+  {
+    date: '23.04.2022',
+    name: 'Kulturní dům Žebrák',
+    place: 'Žebrák',
+  },
+  {
+    date: '06.05.2022',
+    name: 'Westfield Chodov - střecha',
+    place: 'Praha',
+  },
+  {
+    date: '20.05.2022',
+    name: 'Westfield Chodov - střecha',
+    place: 'Praha',
+  },
+  {
+    date: '20.05.2022',
+    name: 'X-Treme Hradec Králové',
+    place: 'Hradec Králové',
+  },
 ];
 
 export default shows;
