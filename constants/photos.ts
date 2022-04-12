@@ -28,8 +28,14 @@ import img27 from '../assets/images/gallery/img_27.jpg';
 import img28 from '../assets/images/gallery/img_28.jpg';
 import img29 from '../assets/images/gallery/img_29.jpg';
 import img30 from '../assets/images/gallery/img_30.jpg';
+import img31 from '../assets/images/gallery/img_31.jpg';
 
 export const photos = [
+  {
+    src: img31,
+    width: 5,
+    height: 3,
+  },
   {
     src: img30,
     width: 5,
