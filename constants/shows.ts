@@ -165,7 +165,7 @@ const shows = [
     place: 'Praha',
   },
   {
-    date: '20.05.2022',
+    date: '28.05.2022',
     name: 'X-Treme Hradec Králové',
     place: 'Hradec Králové',
   },
