@@ -196,7 +196,7 @@ const shows = [
   },
   {
     date: '09.07.2022',
-    name: 'MFF Matoni Stage',
+    name: 'MFF Mattoni Stage',
     place: 'Karlovy Vary',
   },
   
