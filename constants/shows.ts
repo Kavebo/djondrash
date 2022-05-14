@@ -169,6 +169,37 @@ const shows = [
     name: 'X-Treme Hradec Králové',
     place: 'Hradec Králové',
   },
+  {
+    date: '27.05.2022',
+    name: 'Westfield Chodov - střecha',
+    place: 'Praha',
+  },
+  {
+    date: '29.05.2022',
+    name: 'Zbraslav Skateboarding Day',
+    place: 'Praha',
+  },
+  {
+    date: '03.06.2022',
+    name: 'Deethane TourJakMaBeat',
+    place: 'České Budějovice',
+  },
+  {
+    date: '10.06.2022',
+    name: 'Votvírák 2022',
+    place: 'Milovice - Mladá.',
+  },
+  {
+    date: '11.06.2022',
+    name: 'Deethane TourJakMaBeat',
+    place: 'Jabluňkov',
+  },
+  {
+    date: '09.07.2022',
+    name: 'MFF Matoni Stage',
+    place: 'Karlovy Vary',
+  },
+  
 ];
 
 export default shows;
