@@ -37,17 +37,17 @@ export const photos = [
   
   {
     src: img34,
-    width: 4,
+    width: 5,
     height: 3,
   },
   {
     src: img33,
-    width: 4,
+    width: 5,
     height: 3,
   },
   {
     src: img32,
-    width: 4,
+    width: 5,
     height: 3,
   },  
   {
