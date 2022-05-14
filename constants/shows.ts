@@ -187,7 +187,7 @@ const shows = [
   {
     date: '10.06.2022',
     name: 'Votvírák 2022',
-    place: 'Milovice - Mladá.',
+    place: 'Milovice - Mladá',
   },
   {
     date: '11.06.2022',
