@@ -29,9 +29,28 @@ import img28 from '../assets/images/gallery/img_28.jpg';
 import img29 from '../assets/images/gallery/img_29.jpg';
 import img30 from '../assets/images/gallery/img_30.jpg';
 import img31 from '../assets/images/gallery/img_31.jpg';
+import img32 from '../assets/images/gallery/img_32.jpg';
+import img33 from '../assets/images/gallery/img_33.jpg';
+import img34 from '../assets/images/gallery/img_34.jpg';
 
 export const photos = [
-{
+  
+  {
+    src: img34,
+    width: 5,
+    height: 3,
+  },
+   {
+    src: img33,
+    width: 5,
+    height: 3,
+  },
+  {
+    src: img32,
+    width: 5,
+    height: 3,
+  },  
+  {
     src: img31,
     width: 2,
     height: 3,
