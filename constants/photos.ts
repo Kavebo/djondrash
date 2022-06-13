@@ -32,9 +32,15 @@ import img31 from '../assets/images/gallery/img_31.jpg';
 import img32 from '../assets/images/gallery/img_32.jpg';
 import img33 from '../assets/images/gallery/img_33.jpg';
 import img34 from '../assets/images/gallery/img_34.jpg';
+import img35 from '../assets/images/gallery/img_35.jpg';
 
 export const photos = [
   
+  {
+    src: img35,
+    width: 5,
+    height: 3,
+  },
   {
     src: img34,
     width: 5,
