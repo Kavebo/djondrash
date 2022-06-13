@@ -199,6 +199,41 @@ const shows = [
     name: 'MFF Mattoni Stage',
     place: 'Karlovy Vary',
   },
+  {
+    date: '15.06.2022',
+    name: 'Radlická Kulturní Sportovna',
+    place: 'Praha',
+  },
+  {
+    date: '24.06.2022',
+    name: 'Westfield Chodov Střecha',
+    place: 'Praha',
+  },
+  {
+    date: '16.07.2022',
+    name: 'SK8 Girls ČSP Gutovka',
+    place: 'Praha',
+  },
+  {
+    date: '23.07.2022',
+    name: 'Red Bull Half Court: 3x3 basketball challenge',
+    place: 'Česká Lípa',
+  },
+  {
+    date: '30.07.2022',
+    name: 'Red Bull Half Court: 3x3 basketball challenge',
+    place: 'Praha',
+  },
+  {
+    date: '06.08.2022',
+    name: 'Red Bull Half Court: 3x3 basketball challenge',
+    place: 'Brno',
+  },
+  {
+    date: '13.08.2022',
+    name: 'Red Bull Half Court: 3x3 basketball challenge',
+    place: 'Praha',
+  },
   
 ];
 
