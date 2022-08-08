@@ -5,10 +5,11 @@ import NProgress from 'nprogress';
 import type { AppProps } from 'next/app';
 import React, { useEffect } from 'react';
 
-import GlobalStyle from '../constants/globalStyle';
+import globalStyle from '../constants/globalStyle';
 import { LanguageProvider } from '../languages';
 import { pageView } from '../utils/googleAnalytics';
 import CookieBanner from '../components/CookieBanner';
+import { Global } from '@emotion/react';
 
 NProgress.configure({
   minimum: 0.3,
@@ -49,7 +50,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <LanguageProvider>
-      <GlobalStyle />
+      <Global styles={globalStyle} />
       <Component {...pageProps} />
       <CookieBanner />
     </LanguageProvider>

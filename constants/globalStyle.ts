@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { css } from '@emotion/react';
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = css`
   body {
     margin: 0;
     padding: 0;
@@ -8,7 +8,12 @@ const GlobalStyle = createGlobalStyle`
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
 
-  h1, h2, h3, h4, h5, h6{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     z-index: 100;
   }
 `;

@@ -10,7 +10,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Head from 'next/head';
 import React from 'react';
 import { useMemo } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 import backgroundImage from '../assets/images/background3_phone.jpg';
 import Navigation from '../components/Navigation';

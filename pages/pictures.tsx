@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import Head from 'next/head';
 import Gallery, { RenderImageProps } from 'react-photo-gallery';
 import Carousel, { CommonProps, Modal, ModalGateway } from 'react-images';
