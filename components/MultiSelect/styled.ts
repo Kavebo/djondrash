@@ -1,5 +1,5 @@
 import Stack from '@mui/material/Stack';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 export const StyledStack = styled(Stack)`
   background: white;
