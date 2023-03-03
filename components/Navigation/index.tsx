@@ -6,9 +6,7 @@ import { isMobile } from 'react-device-detect';
 import languageIcon from '../../assets/images/CZ-EN_button.svg';
 import homeIcon from '../../assets/images/HOME_button.svg';
 import menuIcon from '../../assets/images/MENU_button.svg';
-import twitchIcon from '../../assets/images/twitchLogo.svg';
-import tiktokIcon from '../../assets/images/tiktok-logo.svg';
-import patreonIcon from '../../assets/images/logo-patreon-white.png';
+import instagramIcon from '../../assets/images/instagramIcon.png';
 import youtubeIcon from '../../assets/images/youtube_icon_white.png';
 import soundcloudIcon from '../../assets/images/soundcloud_icon_white.png';
 import { useTranslation } from '../../languages';
@@ -81,18 +79,8 @@ const Navigation = () => {
             </a>
           </ImageWrapper>
           <ImageWrapper>
-            <a href="https://www.tiktok.com/@djondrash" target="_blank" rel="noreferrer">
-              <Image src={tiktokIcon} alt="icon" width={ICON_HEIGHT} height={ICON_HEIGHT} />
-            </a>
-          </ImageWrapper>
-          <ImageWrapper>
-            <a href="https://www.twitch.tv/djondrash_redbull3style" target="_blank" rel="noreferrer">
-              <Image src={twitchIcon} alt="icon" width={ICON_HEIGHT} height={ICON_HEIGHT} />
-            </a>
-          </ImageWrapper>
-          <ImageWrapper>
-            <a href="https://www.patreon.com/djondrash" target="_blank" rel="noreferrer">
-              <Image src={patreonIcon} alt="icon" width={ICON_HEIGHT} height={ICON_HEIGHT} />
+            <a href="https://www.instagram.com/djondrash/" target="_blank" rel="noreferrer">
+              <Image src={instagramIcon} alt="icon" width={ICON_HEIGHT} height={ICON_HEIGHT} />
             </a>
           </ImageWrapper>
           <ImageWrapper>
