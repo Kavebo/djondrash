@@ -234,7 +234,66 @@ const shows = [
     name: 'Red Bull Half Court: 3x3 basketball challenge',
     place: 'Praha',
   },
-  
+  {
+    date: '03.09.2022',
+    name: 'Mercedes Benz Prague Fashion Week',
+    place: 'Praha',
+  },
+  {
+    date: '07.08.2022',
+    name: 'DeeThane Roxy',
+    place: 'Praha',
+  },
+  {
+    date: '16.12.2022',
+    name: 'Varna Olomouc',
+    place: 'Olomouc',
+  },
+  {
+    date: '25.02.2023',
+    name: 'Red Bull Homerun',
+    place: 'Špindlerův Mlýn',
+  },
+  {
+    date: '22.04.2023',
+    name: 'Prague Bike Fest 2023',
+    place: 'Praha',
+  },
+  {
+    date: '27.05.2023',
+    name: 'Coolife Fest',
+    place: 'Praha',
+  },
+  {
+    date: '17.06.2023',
+    name: 'Iron Town Session',
+    place: 'Ostrava',
+  },
+  {
+    date: '23.06.2023',
+    name: 'U Kulatého Stolu',
+    place: 'Praha',
+  },
+  {
+    date: '01.08.2023',
+    name: 'WakeSurf Rozkoš',
+    place: 'Rozkoš',
+  },
+  {
+    date: '05.08.2023',
+    name: 'Beats For Love 2023',
+    place: 'Ostrava',
+  },
+  {
+    date: '07.08.2023',
+    name: 'KVIFF 2023',
+    place: 'Karlovy Vary',
+  },
+  {
+    date: '04.08.2023',
+    name: 'High Jump',
+    place: 'Lom Hříměždice',
+  },
 ];
 
 export default shows;
