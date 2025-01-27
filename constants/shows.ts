@@ -294,6 +294,21 @@ const shows = [
     name: 'High Jump',
     place: 'Lom Hříměždice',
   },
+  {
+    date: '07.02.2025',
+    name: 'REHAB vol.3',
+    place: 'Praha - Polepšovna Pivnice',
+  },
+  {
+    date: '13.02.2025',
+    name: 'DVA KOHOUTI',
+    place: 'Praha',
+  },
+  {
+    date: '22.02.2025',
+    name: 'Ples Mladých',
+    place: 'Dolní Benešov',
+  },
 ];
 
 export default shows;
